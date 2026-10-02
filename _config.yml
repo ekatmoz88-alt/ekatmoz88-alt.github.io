@@ -1,0 +1,10 @@
+title: Kate Motsar · TW Portfolio
+description: Technical Writer — API-style docs from engineering code
+theme: jekyll-theme-minimal
+show_downloads: false
+markdown: kramdown
+exclude:
+  - README.md
+  - gh_portfolio/UserPreferences.cs
+  - gh_portfolio/filmmgr-config-schema.yaml
+plugins: []
