@@ -3,5 +3,19 @@
 Anonymized configuration schema for the Film Manager module (NDA-safe).
 
 ```yaml
-# ← сюда скопируй содержимое из файла filmmgr-config-schema.yaml
+
+coating:
+  substrate: [Si, CaF2, ZnSe, KBr, NaCl]
+  wavelength_range_um: [2, 20]
+  max_spectrum_points: 100
+  default_incidence_angle_deg: 45
+  optimizer:
+    strategy: [random_search, powell_quadratic]
+    layer_equivalents: ["LHL", "HLH"]
+  output:
+    - reflectance_pct
+    - transmittance_pct
+    - absorbance_pct
+    - phase
+  export_formats: [xlsx, png]
 ```
