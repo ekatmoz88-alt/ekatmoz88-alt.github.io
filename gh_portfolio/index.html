@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Портфолио · Kate Motsar</title>
+  <style>
+    :root { --bg:#0f1115; --accent:#7cf; --txt:#e8e8e8; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,Segoe UI,Arial; background:var(--bg); color:var(--txt); }
+    header { padding:48px 24px; text-align:center; }
+    h1 { font-size:2.4rem; margin:0 0 8px; }
+    nav { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; margin:24px 0; }
+    nav a { color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+    nav a:hover { border-color:var(--accent); }
+    section { max-width:760px; margin:0 auto; padding:24px; }
+    .card { background:#161a21; border-radius:12px; padding:18px; margin:12px 0; }
+    a.btn { display:inline-block; margin-top:8px; padding:8px 14px; background:var(--accent); color:#000; border-radius:8px; text-decoration:none; }
+    footer { text-align:center; padding:32px; font-size:.85rem; opacity:.6; }
+  </style>
 </head>
 <body>
-  <h1>Hello! Site is working!</h1>
-  <p>GitHub Pages is alive.</p>
+  <header>
+    <h1>Kate Motsar · Portfolio</h1>
+    <p>Схемы БД · CAD-команды · Документация · Локализация</p>
+  </header>
+
+  <nav>
+    <a href="filmmgr-schema.md">FilmMgr Schema</a>
+    <a href="portfolio-ru">Портфолио (RU)</a>
+    <a href="portfolio-en">Portfolio (EN)</a>
+    <a href="cad-command-reference.en">CAD Ref (EN)</a>
+    <a href="arm-state-machine.en">ARM State Machine (EN)</a>
+  </nav>
+
+  <section>
+    <div class="card">
+      <h2>О проекте</h2>
+      <p>Инженерная документация, ER-схемы и справочники команд. Все материалы — на отдельных страницах.</p>
+    </div>
+    <div class="card">
+      <h2>Быстрые ссылки</h2>
+      <a class="btn" href="filmmgr-schema.md">Открыть схему БД →</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Kate Motsar · Built with GitHub Pages</footer>
 </body>
 </html>
+
