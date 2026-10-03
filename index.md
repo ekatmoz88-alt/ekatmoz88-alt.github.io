@@ -14,8 +14,8 @@ and state-machines into endpoint-style specs.
 ---
 
 ## 🔗 Quick links
-| 📘 | [Portfolio RU](README.md) |
-| 🌐 | [Portfolio EN](README.en.md) |
+| 📘 | [Portfolio RU](portfolio-ru) |
+| 🌐 | [Portfolio EN](portfolio-en) |
 | ⚙️ | [FilmMgr config schema](gh_portfolio/filmmgr-config-schema.yaml) |
 | 📐 | [CAD command ref (EN)](gh_portfolio/cad-command-reference.en.md) |
 | 🔄 | [Sync state machine (EN)](gh_portfolio/arm-state-machine.en.md) |
