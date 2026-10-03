@@ -21,6 +21,12 @@ and state-machines into endpoint-style specs.
 | 🔄 | [Sync state machine (EN)](gh_portfolio/arm-state-machine.en.md) |
 
 ---
+## 🎯 Open to Work
+**Senior Technical Writer / API Documentation Specialist** (Remote / Hybrid)
+- 🌐 Devs stop guessing endpoints | Onboarding docs that scale
+- 🧬 Versioned, reviewable docs in Git | Bilingual (RU-EN) precision
+
+📨 DM me on LinkedIn · 🌍 Live site: https://ekatmoz88-alt.github.io/
 
 ## 🧭 One-liner (for LinkedIn / HH headline)
 > *Technical Writer · API-style docs from engineering code · ЕСКД · Delphi/LISP literate · B2 EN*
