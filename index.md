@@ -12,13 +12,8 @@ Moving toward **API & developer docs**. I turn GUI flows, validation rules
 and state-machines into endpoint-style specs.
 
 ---
-
 ## 🔗 Quick links
-| 📘 | [Portfolio RU](portfolio-ru) |
-| 🌐 | [Portfolio EN](portfolio-en) |
-| ⚙️ | [FilmMgr config schema](filmmgr-schema) |
-| 📐 |  |[CAD command ref (EN)](cad-command-reference.en) | 
-| 🔄 | [Sync state machine (EN)](arm-state-machine.en) |
+| [📁 Portfolio RU](gh_portfolio/portfolio-ru.md) | [🌐 Portfolio EN](gh_portfolio/portfolio-en.md) | [⚙️ FilmMgr config schema](gh_portfolio/filmmgr-config-schema.yaml) | [📐 CAD ref (RU)](gh_portfolio/cad-command-reference.md) | [📐 CAD ref (EN)](gh_portfolio/cad-command-reference.en.md) | [🔄 Sync state machine (EN)](gh_portfolio/arm-state-machine.md) |
 
 ---
 ## 🎯 Open to Work
