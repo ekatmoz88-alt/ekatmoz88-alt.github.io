@@ -1,4 +1,4 @@
-<!doctype html>
+{% raw %}<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
@@ -14,13 +14,12 @@
       --sidebar-text: #ccc;
     }
     * { box-sizing: border-box; }
-    body { 
-      margin: 0; 
+    body {
+      margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       display: flex;
       color: var(--text);
     }
-    /* Sidebar */
     .sidebar {
       width: var(--sidebar-width);
       background: var(--sidebar-bg);
@@ -42,7 +41,6 @@
       margin-bottom: 4px;
     }
     .sidebar nav a:hover { background: #333; color: #fff; }
-    .sidebar nav a.active { background: var(--primary); color: #fff; }
     .tag {
       display: inline-block;
       background: var(--primary);
@@ -53,75 +51,61 @@
       margin-right: 4px;
       margin-bottom: 4px;
     }
-    /* Main content */
     .main {
       margin-left: var(--sidebar-width);
       padding: 40px 60px;
       max-width: 900px;
       width: 100%;
     }
-    h2 { 
-      color: #2c3e50; 
-      border-left: 4px solid var(--primary); 
-      padding-left: 12px; 
+    h2 {
+      color: #2c3e50;
+      border-left: 4px solid var(--primary);
+      padding-left: 12px;
       margin-top: 40px;
     }
     h3 { color: #34495e; margin-top: 30px; }
-    table { 
-      border-collapse: collapse; 
-      width: 100%; 
-      margin: 20px 0; 
-      font-size: 14px; 
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px 0;
+      font-size: 14px;
     }
-    th, td { 
-      border: 1px solid #ddd; 
-      padding: 10px 12px; 
-      text-align: left; 
-      vertical-align: top; 
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
     }
     th { background: #f8f9fa; font-weight: 600; }
     tr:nth-child(even) { background: #fafafa; }
-    code { 
-      background: #f4f4f4; 
-      padding: 2px 6px; 
-      border-radius: 3px; 
-      font-family: Consolas, Monaco, monospace; 
-      font-size: 13px; 
+    code {
+      background: #f4f4f4;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 13px;
     }
-    pre { 
-      background: #1e1e1e; 
-      color: #dcdcdc; 
-      padding: 16px; 
-      border-radius: 6px; 
-      overflow-x: auto; 
-      font-size: 13px; 
+    pre {
+      background: #1e1e1e;
+      color: #dcdcdc;
+      padding: 16px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 13px;
       line-height: 1.4;
     }
     pre code { background: none; color: inherit; padding: 0; }
-    .note { 
-      background: #fff8e1; 
-      border-left: 4px solid #f39c12; 
-      padding: 12px 16px; 
-      margin: 16px 0; 
+    .note {
+      background: #fff8e1;
+      border-left: 4px solid #f39c12;
+      padding: 12px 16px;
+      margin: 16px 0;
       font-size: 14px;
     }
-    .card {
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      padding: 20px;
-      margin: 20px 0;
-      text-decoration: none;
-      color: inherit;
-      display: block;
-      transition: box-shadow 0.2s;
-    }
-    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .card h3 { margin-top: 0; color: var(--primary); }
   </style>
 </head>
 <body>
 
-<!-- SIDEBAR -->
 <aside class="sidebar">
   <h1>Kate Motsar</h1>
   <p>Technical Writer Portfolio</p>
@@ -133,16 +117,13 @@
   </nav>
 </aside>
 
-<!-- MAIN -->
 <div class="main">
 
-  <!-- TOP / INTRO -->
   <section id="top">
     <h2>API-style docs from engineering code</h2>
     <p>Портфолио технического писателя. Обезличенные кейсы, оформленные в стиле Docs-as-Code (endpoint-блоки, схемы, таблицы ограничений).</p>
   </section>
 
-  <!-- PORTFOLIO RU -->
   <section id="portfolio-ru">
     <h2>Портфолио RU</h2>
     <p><strong>Кейс 1 · FilmMgr</strong> — Инструмент расчёта оптических покрытий (Delphi). Документирование под руководством научного руководителя. <a href="#filmgr-schema">См. схему →</a></p>
@@ -150,7 +131,6 @@
     <p><strong>Кейс 3 · АРМ учёта досье</strong> — Специализированное ПО для учёта документов (ЕСКД). 10 состояний синхронизации.</p>
   </section>
 
-  <!-- PORTFOLIO EN -->
   <section id="portfolio-en">
     <h2>Portfolio EN</h2>
     <p><strong>Case 1 · FilmMgr</strong> — Optical coating calculator (Delphi). Engineering notes re-documented as API-style reference. <a href="#filmgr-schema">See schema →</a></p>
@@ -158,7 +138,6 @@
     <p><strong>Case 3 · Dossier Accounting (ARM)</strong> — Document management system (ESKD). 10 sync states.</p>
   </section>
 
-  <!-- FILMGR SCHEMA (все таблицы и схемы) -->
   <section id="filmgr-schema">
     <h2>FilmMgr · Оптические покрытия (Legacy Docs)</h2>
     <p>
@@ -172,7 +151,6 @@
       <strong>Задача техписателя:</strong> Перевести неформальные инженерные заметки в структурированный guide: выделить ограничения, задокументировать баги, оформить в endpoint-стиле (input → constraints → output).
     </div>
 
-    <!-- Схема Workflow -->
     <h3>Схема алгоритма (Workflow)</h3>
     <pre><code>┌──────────┐    ┌────────────┐    ┌────────────┐    ┌────────────┐
 │  Запуск  │───▶│  Подложка  │───▶│  Диапазон  │───▶│  Слои /    │
@@ -184,22 +162,20 @@
 │ .fil/xlsx│    │  R/T/A %   │    │ (Пауэлл)   │
 └──────────┘    └────────────┘    └────────────┘</code></pre>
 
-    <!-- Таблица 1: Алгоритм -->
     <h3>Таблица 1 · Пошаговый алгоритм</h3>
     <table>
       <tr><th>Шаг</th><th>Действие</th><th>Параметры</th><th>Ограничения</th></tr>
       <tr><td><strong>1</strong></td><td>Запуск</td><td>—</td><td>—</td></tr>
       <tr><td><strong>2</strong></td><td>Подложка и точки</td><td>CaF₂, BaF₂, Ge…</td><td>50–250 точек (рек. ~100)</td></tr>
       <tr><td><strong>3</strong></td><td>Диапазон длин волн</td><td>2–8 мкм (или 2–20)</td><td>45°, S/P (нет non-pol)</td></tr>
-      <tr><td><strong>4</strong></td><td>Слои и материалы</td><td><code>*-film</code> &gt; <code>*-const</code></td><td>Толщина: λ₀/(4n)</td></tr>
+      <tr><td><strong>4</strong></td><td>Слои и материалы</td><td>*-film &gt; *-const</td><td>Толщина: λ₀/(4n)</td></tr>
       <tr><td><strong>5</strong></td><td>Слой воздуха</td><td>Толщина 0.1</td><td>⚠️ <strong>Баг:</strong> влияет на результат → снять галочку</td></tr>
       <tr><td><strong>6–7</strong></td><td>Оптимизация</td><td>Случайный поиск + Пауэлл</td><td>10–100 итераций, стоп при стабилизации</td></tr>
       <tr><td><strong>8</strong></td><td>Экспорт</td><td>.fil, Excel, изображение</td><td>—</td></tr>
     </table>
 
-    <!-- Схема Endpoint -->
     <h3>Endpoint-описание (как API)</h3>
-    <pre><code class="language-yaml">endpoints:
+    <pre><code>endpoints:
   - name: "initialize_session"
     description: "Set substrate and spectral range"
     input:
@@ -217,7 +193,6 @@
       success_criteria: "value ≤ 2 (ideal &lt; 1)"
     output: [R/T/A %, phase, .fil, xlsx]</code></pre>
 
-    <!-- Таблица 2: Материалы -->
     <h3>Таблица 2 · Шпаргалка по материалам</h3>
     <table>
       <tr><th>Результат</th><th>Merit (чем меньше, тем лучше)</th><th>Стек материалов</th></tr>
@@ -227,7 +202,6 @@
       <tr><td>Пример</td><td>1.586</td><td>Отклонение R на 1.586% от 50%</td></tr>
     </table>
 
-    <!-- Таблица 3: Баги -->
     <h3>⚠️ Таблица 3 · Известные проблемы (Known Issues)</h3>
     <table>
       <tr><th>Проблема</th><th>Влияние</th><th>Workaround</th></tr>
@@ -239,4 +213,4 @@
 </div>
 
 </body>
-</html>
+</html>{% endraw %}
