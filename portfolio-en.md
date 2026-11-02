@@ -11,7 +11,7 @@ Architected multi-service RESTful and WebSocket data models using the ViWi/RSI a
 *   **Artifact Mapping:** Built live runtime flow dependencies using automated `mermaid.js` sequence schemas tracking contextual search gating.
 *   **Documentation Link:** [See Core API Specification →](vwa-navigation-spec.md)
 
-### Case 2 · FilmMgr (Numerical Math & Optical Coatings)
+### Case 2 · Film Manager module (Optical Coating Calculator)
 Transformed non-formal engineering computation assets and numerical algorithms (SUAI) into an API-style data-gating manual. Formatted low-level implementation logic tracking multidimensional optimization cycles (stochastic search layered with Powell's coordinate descent).
 *   **System Constraints:** Formatted explicit hardware boundary indexes: substrates validation arrays (CaF₂, BaF₂, Ge), spectral infrared bandwidths (2.0–20.0 µm), polarization subsets (S/P matrices), and automated data array checkpoints (≤100 points baseline limit).
 *   **Lifecycle Logging:** Cataloged systemic core engine runtime anomalies (Air-layer node calculations loop offset) with actionable mitigation workarounds.
