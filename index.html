@@ -1,96 +1,53 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Kate Motsar — Technical Writer. API documentation, OpenAPI, technical guides, process documentation and Docs-as-Code portfolio.">
-<title>Kate Motsar — Technical Writing Portfolio</title>
+<meta name="description" content="Film Manager module — technical documentation for a legacy optical coating calculator.">
+<title>Film Manager module · Technical Documentation</title>
 <style>
-:root{--ink:#17212f;--muted:#64748b;--line:#e2e8f0;--paper:#f7f8fb;--blue:#2457d6;--navy:#101b32}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-header{background:var(--navy);color:#fff;padding:76px 0 68px}.hero{position:relative}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:#a9c1ff}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.08;letter-spacing:-.04em;margin:14px 0}.hero p{max-width:720px;color:#d4dced;font-size:19px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:11px 17px;border-radius:9px;background:#fff;color:var(--navy);font-weight:700}.btn.outline{background:transparent;color:#fff;border:1px solid #71809a}.lang{position:absolute;right:0;top:0;display:flex;gap:5px}.lang button{border:1px solid #71809a;background:transparent;color:white;border-radius:7px;padding:7px 11px;font-weight:700;cursor:pointer}.lang button[aria-pressed=true]{background:white;color:var(--navy);border-color:white}
-nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}nav .wrap{display:flex;gap:24px;overflow:auto;padding:13px 0;white-space:nowrap}nav a{font-size:14px;font-weight:650;color:#334155}
-main{padding:30px 0 72px}section{scroll-margin-top:72px;margin:42px 0}.section-head{margin-bottom:20px}.section-head h2{font-size:28px;letter-spacing:-.025em;margin:0 0 5px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:0 5px 20px #17212f08;display:flex;flex-direction:column}.card h3{font-size:20px;margin:0 0 8px}.card p{color:#475569;margin:0 0 14px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:4px 0 15px}.chip{font-size:12px;border-radius:99px;padding:4px 9px;background:#edf2ff;color:#284b9b}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:auto;padding-top:12px;font-weight:650;font-size:14px}.detail{background:#fff;border:1px solid var(--line);border-radius:15px;padding:24px;margin:16px 0}.detail h3{margin:0 0 7px}.detail ul{padding-left:20px;margin:10px 0}.notice{border-left:4px solid #d6a33a;background:#fff8e8;padding:14px 17px;border-radius:5px;color:#604b20}.about{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}.panel h3{margin-top:0}.contact{background:var(--navy);color:#fff;border-radius:16px;padding:28px}.contact p{color:#d4dced}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px}
-[hidden]{display:none!important}:focus-visible{outline:3px solid #7aa2ff;outline-offset:3px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media(max-width:720px){.grid,.about{grid-template-columns:1fr}.wrap{width:min(100% - 28px,1120px)}header{padding:70px 0 55px}.hero p{font-size:17px}.lang{top:-48px}}
-
-/* Portfolio visual language aligned with the Orders API / Structurizr-inspired case study */
-:root{--ink:#172b45;--muted:#60738c;--line:#cbd7e5;--paper:#f3f6fa;--blue:#1769aa;--navy:#102b4c}
-body{background:#f3f6fa;color:#172b45}
-header{background:#102b4c;border-bottom:4px solid #2c83bd;padding:70px 0 64px}
-.eyebrow{color:#8fc8ee;letter-spacing:.16em}
-.hero h1{font-weight:750;letter-spacing:-.035em}
-.hero p{color:#d7e5f2}
-.btn{border-radius:4px;background:#fff;color:#123b5b}
-.btn.outline{border-color:#7897b2;color:#fff}
-.btn.outline:hover{background:#1a3b5d;text-decoration:none}
-.lang button{border-radius:4px;border-color:#7897b2}
-nav{background:#f8fafc;border-bottom:1px solid #cbd7e5}
-nav a{color:#34536f}
-nav a:hover{color:#1769aa}
-.section-head h2{color:#173653;letter-spacing:-.02em}
-.section-head p{color:#60738c}
-.card,.detail,.panel{border:1px solid #c6d3e0;border-radius:4px;box-shadow:0 3px 12px #1836530b;background:#fff}
-.card{position:relative;overflow:hidden;padding:22px}
-.card:before,.detail:before{content:"";display:block;height:4px;background:#2584b9;position:absolute;left:0;right:0;top:0}
-.card h3,.detail h3,.panel h3{color:#173f63}
-.card p{color:#526b83}
-.chip{background:#e4eff7;color:#1d5b83;border:1px solid #c6d9e8;border-radius:3px}
-.links a{color:#1769aa}
-.notice{border-left:4px solid #2584b9;background:#edf5fa;color:#34556f;border-radius:3px}
-.contact{background:#102b4c;border:1px solid #2b638b;border-radius:4px}
-footer{border-top:1px solid #cbd7e5;color:#60738c}
-:focus-visible{outline:3px solid #55a6d8;outline-offset:3px}
-@media(max-width:720px){header{padding:66px 0 52px}.card,.detail,.panel{border-radius:4px}}
+:root{color-scheme:light;--ink:#172b45;--muted:#60738c;--line:#cbd7e5;--paper:#f3f6fa;--blue:#1769aa;--navy:#102b4c}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.7 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.wrap{width:min(900px,calc(100% - 36px));margin:auto}header{background:var(--navy);color:white;padding:76px 0 64px;border-bottom:4px solid #2c83bd}
+.eyebrow{text-transform:uppercase;letter-spacing:.15em;font-size:12px;font-weight:700;color:#8fc8ee}
+h1{font-size:clamp(38px,6vw,58px);line-height:1.08;letter-spacing:-.04em;margin:15px 0}
+header p{max-width:700px;color:#d7e5f2;font-size:19px}
+main{padding:38px 0 70px}.panel{background:white;border:1px solid var(--line);padding:26px;margin:18px 0}
+h2{font-size:24px;margin:0 0 10px;color:#173f63}p{color:#526b83}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.chip{font-size:13px;padding:5px 10px;background:#e4eff7;color:#1d5b83;border:1px solid #c6d9e8}
+a{color:var(--blue);font-weight:650;text-decoration:none}a:hover{text-decoration:underline}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-block;padding:11px 17px;background:white;color:var(--navy);border:1px solid white}.btn.alt{background:transparent;color:white;border-color:#7897b2}
+.notice{background:#edf5fa;border-left:4px solid #2584b9;padding:14px 17px;color:#34556f}
+footer{border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:13px}
 </style>
 </head>
 <body>
-<header id="top"><div class="wrap hero">
-<div class="lang" aria-label="Language"><button type="button" data-set-lang="en" aria-pressed="false">EN</button><button type="button" data-set-lang="ru" aria-pressed="true">RU</button></div>
-<div class="eyebrow">Technical Writing · Portfolio</div><h1>Kate Motsar</h1>
-<p data-lang="ru">Техническая документация для разработчиков и пользователей: API reference, OpenAPI, технические руководства, описание процессов и документация сложных систем.</p>
-<p data-lang="en" hidden>Technical documentation for developers and users: API references, OpenAPI specifications, technical guides, process descriptions, and documentation for complex systems.</p>
-<div class="actions"><a class="btn" href="#projects"><span data-lang="ru">Посмотреть проекты</span><span data-lang="en" hidden>View projects</span></a><a class="btn outline" href="https://github.com/ekatmoz88-alt">GitHub profile ↗</a><a class="btn outline" href="https://www.linkedin.com/in/kate-motsar-b56974267/">LinkedIn ↗</a></div>
+<header><div class="wrap">
+<div class="eyebrow">Standalone project · Technical documentation</div>
+<h1>Film Manager module</h1>
+<p>Technical documentation for a legacy software module used in multi-layer optical coating calculations and optimization.</p>
+<div class="actions">
+<a class="btn" href="/filmmgr-schema">Read the configuration schema ↗</a>
+<a class="btn alt" href="https://github.com/ekatmoz88-alt/ekatmoz88-alt.github.io/blob/main/filmmgr-schema.md">View source on GitHub ↗</a>
+</div>
 </div></header>
-<nav><div class="wrap">
-<a href="#projects"><span data-lang="ru">Проекты</span><span data-lang="en" hidden>Projects</span></a><a href="#samples"><span data-lang="ru">Примеры работ</span><span data-lang="en" hidden>Work samples</span></a><a href="#approach"><span data-lang="ru">Подход и инструменты</span><span data-lang="en" hidden>Approach & tools</span></a><a href="#about"><span data-lang="ru">Обо мне</span><span data-lang="en" hidden>About</span></a><a href="#contact"><span data-lang="ru">Контакты</span><span data-lang="en" hidden>Contact</span></a>
-</div></nav>
 <main class="wrap">
-<section id="projects"><div class="section-head"><h2><span data-lang="ru">Избранные проекты</span><span data-lang="en" hidden>Selected projects</span></h2><p><span data-lang="ru">Откройте сайт проекта или конкретный документ — ссылки ведут непосредственно к материалам.</span><span data-lang="en" hidden>Open a project site or a specific document — links lead directly to the materials.</span></p></div>
-<div class="grid">
-<article class="card"><h3>API Documentation Portfolio</h3><p><span data-lang="ru">Документация демонстрационного Orders API: спецификация, API reference, ошибки, webhooks и руководство для разработчиков.</span><span data-lang="en" hidden>Documentation for a demo Orders API: specification, API reference, errors, webhooks, and a developer guide.</span></p><div class="chips"><span class="chip">OpenAPI 3.1</span><span class="chip">REST API</span><span class="chip">Markdown</span><span class="chip">EN/RU</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/technical-writing-portfolio/"><span data-lang="ru">Сайт проекта ↗</span><span data-lang="en" hidden>Project site ↗</span></a><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio"><span data-lang="ru">Исходные файлы ↗</span><span data-lang="en" hidden>Source files ↗</span></a><a href="/projects/orders-api/"><span data-lang="ru">Подробнее о проекте ↗</span><span data-lang="en" hidden>Project details ↗</span></a></div></article>
-<article class="card"><h3>API Documentation Portfolio V2</h3><p><span data-lang="ru">Расширенный пример API-документации: OpenAPI-контракты, структура портала, анализ SOAP-интеграций и автоматизация публикации.</span><span data-lang="en" hidden>An extended API documentation example: OpenAPI contracts, portal structure, SOAP integration analysis, and publishing automation.</span></p><div class="chips"><span class="chip">OpenAPI</span><span class="chip">SOAP</span><span class="chip">Jekyll</span><span class="chip">Docs-as-Code</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/"><span data-lang="ru">Сайт проекта ↗</span><span data-lang="en" hidden>Project site ↗</span></a><a href="https://github.com/ekatmoz88-alt/api-docs-portfolio-v2"><span data-lang="ru">Исходные файлы ↗</span><span data-lang="en" hidden>Source files ↗</span></a><a href="/projects/api-docs-v2/"><span data-lang="ru">Подробнее о проекте ↗</span><span data-lang="en" hidden>Project details ↗</span></a></div></article>
-<article class="card"><h3>Fintech Documentation Demo</h3><p><span data-lang="ru">Документирование демонстрационного процесса crypto on-ramp: пользовательские сценарии, KYC, классификация персональных данных и аудит.</span><span data-lang="en" hidden>Documentation of a demo crypto on-ramp process: user flows, KYC, personal data classification, and audit.</span></p><div class="chips"><span class="chip">Process flows</span><span class="chip">Security</span><span class="chip">KYC</span><span class="chip">Specifications</span></div><div class="links"><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo"><span data-lang="ru">Проект и документы ↗</span><span data-lang="en" hidden>Project & documents ↗</span></a><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/tree/main/security"><span data-lang="ru">Примеры security-документов ↗</span><span data-lang="en" hidden>Security document samples ↗</span></a><a href="/projects/fintech-docs/"><span data-lang="ru">Подробнее о проекте ↗</span><span data-lang="en" hidden>Project details ↗</span></a></div></article>
-<article class="card"><h3>Technical Writing Workflows</h3><p><span data-lang="ru">Практика Docs-as-Code: автоматическая проверка OpenAPI, Markdown и ссылок с помощью CI workflow.</span><span data-lang="en" hidden>Docs-as-Code workflow: automated validation of OpenAPI, Markdown, and links using CI workflows.</span></p><div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Spectral</span><span class="chip">Markdownlint</span><span class="chip">Lychee</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/technical-writing-workflows/"><span data-lang="ru">Сайт проекта ↗</span><span data-lang="en" hidden>Project site ↗</span></a><a href="https://github.com/ekatmoz88-alt/technical-writing-workflows"><span data-lang="ru">Исходные файлы ↗</span><span data-lang="en" hidden>Source files ↗</span></a><a href="/projects/docs-workflows/"><span data-lang="ru">Подробнее о проекте ↗</span><span data-lang="en" hidden>Project details ↗</span></a></div></article>
-<article class="card"><h3>Film Manager module</h3><p><span data-lang="ru">Документация legacy-модуля расчёта многослойных оптических покрытий: схема конфигурации, входные параметры, ограничения оптимизации и известные особенности расчётного ядра.</span><span data-lang="en" hidden>Documentation for a legacy optical-coating calculation module: configuration schema, input parameters, optimization constraints, and known calculation-engine issues.</span></p><div class="chips"><span class="chip">Delphi</span><span class="chip">Legacy software</span><span class="chip">YAML</span><span class="chip">Technical specification</span></div><div class="links"><a href="/filmmgr-schema"><span data-lang="ru">Открыть документацию ↗</span><span data-lang="en" hidden>Open documentation ↗</span></a><a href="https://github.com/ekatmoz88-alt/ekatmoz88-alt.github.io/blob/main/filmmgr-schema.md"><span data-lang="ru">Исходный файл ↗</span><span data-lang="en" hidden>Source file ↗</span></a><a href="https://github.com/ekatmoz88-alt/ekatmoz88-alt.github.io"><span data-lang="ru">Проект на GitHub ↗</span><span data-lang="en" hidden>GitHub project ↗</span></a></div></article>
-<article class="card"><h3>GitHub Profile Dashboard</h3><p><span data-lang="ru">Интерактивная витрина проектов и GitHub-профиля: единая точка входа к репозиториям, документации и демонстрационным материалам.</span><span data-lang="en" hidden>An interactive showcase of projects and a GitHub profile: a single entry point to repositories, documentation, and demo materials.</span></p><div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">GitHub</span><span class="chip">Dashboard</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/github-profile-dashboard-vite/"><span data-lang="ru">Открыть Dashboard ↗</span><span data-lang="en" hidden>Open dashboard ↗</span></a><a href="https://github.com/ekatmoz88-alt/github-profile-dashboard-vite"><span data-lang="ru">Исходные файлы ↗</span><span data-lang="en" hidden>Source files ↗</span></a><a href="/projects/github-dashboard/"><span data-lang="ru">Подробнее о проекте ↗</span><span data-lang="en" hidden>Project details ↗</span></a></div></article>
-</div></section>
-<section id="samples"><div class="section-head"><h2><span data-lang="ru">Примеры документов</span><span data-lang="en" hidden>Document samples</span></h2><p><span data-lang="ru">Несколько артефактов, которые можно открыть напрямую.</span><span data-lang="en" hidden>Selected artifacts available to open directly.</span></p></div><div class="grid">
-<div class="detail"><h3>API reference и developer guide</h3><ul><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/docs/api-reference.md">API Reference</a></li><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/docs/developer-guide.md">Developer Guide</a></li><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/docs/webhooks.md">Webhooks Guide</a></li><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/openapi/openapi.yaml">OpenAPI specification</a></li></ul></div>
-<div class="detail"><h3><span data-lang="ru">Процессы и безопасность</span><span data-lang="en" hidden>Processes & security</span></h3><ul><li><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/blob/main/flows/04-crypto-onramp.md">Crypto on-ramp flow</a></li><li><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/blob/main/security/pii-data-classification.md">PII data classification</a></li><li><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/blob/main/security/audit-log-spec.md">Audit log specification</a></li></ul></div>
-</div><div class="notice"><strong><span data-lang="ru">Прозрачность:</span><span data-lang="en" hidden>Transparency:</span></strong> <span data-lang="ru">API и fintech-примеры являются учебными/демонстрационными материалами, а не документацией действующих коммерческих сервисов.</span><span data-lang="en" hidden>The API and fintech examples are educational/demo materials, not documentation for live commercial services.</span></div></section>
-<section id="approach"><div class="section-head"><h2><span data-lang="ru">Подход и инструменты</span><span data-lang="en" hidden>Approach & tools</span></h2><p><span data-lang="ru">Документация как часть жизненного цикла продукта.</span><span data-lang="en" hidden>Documentation as part of the product lifecycle.</span></p></div><div class="grid">
-<div class="detail"><h3><span data-lang="ru">Что демонстрируют работы</span><span data-lang="en" hidden>What the projects demonstrate</span></h3><ul>
-<li><span data-lang="ru">Структурирование информации и проектирование навигации.</span><span data-lang="en" hidden>Information structuring and navigation design.</span></li>
-<li><span data-lang="ru">Описание API, параметров, схем, ответов и ошибок.</span><span data-lang="en" hidden>API documentation: parameters, schemas, responses, and errors.</span></li>
-<li><span data-lang="ru">Пошаговые инструкции и описание бизнес-процессов.</span><span data-lang="en" hidden>Step-by-step instructions and business process descriptions.</span></li>
-<li><span data-lang="ru">Документация в Markdown и управление изменениями через Git.</span><span data-lang="en" hidden>Markdown documentation and change management with Git.</span></li>
-<li><span data-lang="ru">Проверка качества и согласованности документации.</span><span data-lang="en" hidden>Documentation quality and consistency checks.</span></li>
-</ul></div>
-<div class="detail"><h3><span data-lang="ru">Инструменты и форматы</span><span data-lang="en" hidden>Tools & formats</span></h3><p>OpenAPI 3.1 · YAML · Markdown · Git/GitHub · REST · SOAP · SQL · Oracle · GitHub Actions · HTML/CSS · React · Vite</p><p><span data-lang="ru">Материалы представлены на английском и русском языках там, где это предусмотрено проектом.</span><span data-lang="en" hidden>Project materials are available in English and Russian where provided by the project.</span></p></div>
-</div></section>
-<section id="about"><div class="section-head"><h2><span data-lang="ru">Обо мне</span><span data-lang="en" hidden>About</span></h2></div><div class="about"><div class="panel"><h3>Kate Motsar · Technical Writer</h3><p><span data-lang="ru">Создаю понятную техническую документацию на основе анализа требований, структур данных, API и рабочих процессов. В портфолио собраны примеры документации, спецификаций и Docs-as-Code практик.</span><span data-lang="en" hidden>I create clear technical documentation based on the analysis of requirements, data structures, APIs, and workflows. This portfolio brings together examples of documentation, specifications, and Docs-as-Code practices.</span></p><p><span data-lang="ru">Открыта к возможностям в Technical Writing, API Documentation и Developer Documentation.</span><span data-lang="en" hidden>Open to opportunities in Technical Writing, API Documentation, and Developer Documentation.</span></p></div><div class="contact" id="contact"><h3><span data-lang="ru">Связаться</span><span data-lang="en" hidden>Get in touch</span></h3><p><span data-lang="ru">Буду рада обсудить задачи по технической документации.</span><span data-lang="en" hidden>I'd be glad to discuss technical documentation needs.</span></p><p><a style="color:#fff" href="https://www.linkedin.com/in/kate-motsar-b56974267/">LinkedIn ↗</a><br><a style="color:#fff" href="https://github.com/ekatmoz88-alt">GitHub ↗</a></p></div></div></section>
-</main><footer><div class="wrap">© Kate Motsar · Technical Writing Portfolio · <a href="#top"><span data-lang="ru">Наверх ↑</span><span data-lang="en" hidden>Back to top ↑</span></a></div></footer>
-<script>
-(function(){
-  function setLanguage(lang){
-    document.documentElement.lang=lang;
-    document.querySelectorAll('[data-lang]').forEach(function(el){el.hidden=el.getAttribute('data-lang')!==lang;});
-    document.querySelectorAll('[data-set-lang]').forEach(function(btn){btn.setAttribute('aria-pressed',String(btn.getAttribute('data-set-lang')===lang));});
-    try{localStorage.setItem('portfolio-language',lang);}catch(e){}
-  }
-  document.querySelectorAll('[data-set-lang]').forEach(function(btn){btn.addEventListener('click',function(){setLanguage(btn.getAttribute('data-set-lang'));});});
-  var saved='ru';try{saved=localStorage.getItem('portfolio-language')||'ru';}catch(e){}
-  setLanguage(saved==='en'?'en':'ru');
-})();
-</script>
+<section class="panel">
+<h2>About this documentation</h2>
+<p>This page presents one standalone documentation case: the Film Manager module. It describes the configuration structure, calculation inputs, optimization approach, output data, and known limitations recorded for the legacy application.</p>
+<div class="chips"><span class="chip">Delphi · legacy software</span><span class="chip">YAML schema</span><span class="chip">Optical coatings</span><span class="chip">Technical specification</span></div>
+</section>
+<section class="panel">
+<h2>Documentation contents</h2>
+<ul>
+<li>Session initialization and calculation parameters</li>
+<li>Substrate, wavelength range, angle, and polarization settings</li>
+<li>Multi-layer coating optimization workflow</li>
+<li>Reflectance, transmittance, absorption, and phase outputs</li>
+<li>Known calculation issues and limitations</li>
+</ul>
+<p><a href="/filmmgr-schema">Open Film Manager configuration schema ↗</a></p>
+</section>
+<section class="notice">
+<strong>Scope:</strong> This is an independent project page for Film Manager module documentation. It does not combine this work with documents or projects created for other companies or contexts.
+</section>
+</main>
+<footer><div class="wrap">Film Manager module · Standalone documentation project</div></footer>
 </body></html>
