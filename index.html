@@ -1,216 +1,47 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kate Motsar - Technical Writer Portfolio</title>
-  <style>
-    :root {
-      --sidebar-width: 260px;
-      --primary: #e74c3c;
-      --bg: #ffffff;
-      --sidebar-bg: #1e1e1e;
-      --text: #333;
-      --sidebar-text: #ccc;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      display: flex;
-      color: var(--text);
-    }
-    .sidebar {
-      width: var(--sidebar-width);
-      background: var(--sidebar-bg);
-      color: var(--sidebar-text);
-      padding: 24px 16px;
-      position: fixed;
-      height: 100vh;
-      overflow-y: auto;
-    }
-    .sidebar h1 { color: #fff; font-size: 18px; margin: 0 0 8px; }
-    .sidebar p { font-size: 13px; margin: 0 0 24px; color: #888; }
-    .sidebar nav a {
-      display: block;
-      color: var(--sidebar-text);
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 4px;
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-    .sidebar nav a:hover { background: #333; color: #fff; }
-    .tag {
-      display: inline-block;
-      background: var(--primary);
-      color: #fff;
-      padding: 2px 8px;
-      border-radius: 4px;
-      font-size: 12px;
-      margin-right: 4px;
-      margin-bottom: 4px;
-    }
-    .main {
-      margin-left: var(--sidebar-width);
-      padding: 40px 60px;
-      max-width: 900px;
-      width: 100%;
-    }
-    h2 {
-      color: #2c3e50;
-      border-left: 4px solid var(--primary);
-      padding-left: 12px;
-      margin-top: 40px;
-    }
-    h3 { color: #34495e; margin-top: 30px; }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin: 20px 0;
-      font-size: 14px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px 12px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th { background: #f8f9fa; font-weight: 600; }
-    tr:nth-child(even) { background: #fafafa; }
-    code {
-      background: #f4f4f4;
-      padding: 2px 6px;
-      border-radius: 3px;
-      font-family: Consolas, Monaco, monospace;
-      font-size: 13px;
-    }
-    pre {
-      background: #1e1e1e;
-      color: #dcdcdc;
-      padding: 16px;
-      border-radius: 6px;
-      overflow-x: auto;
-      font-size: 13px;
-      line-height: 1.4;
-    }
-    pre code { background: none; color: inherit; padding: 0; }
-    .note {
-      background: #fff8e1;
-      border-left: 4px solid #f39c12;
-      padding: 12px 16px;
-      margin: 16px 0;
-      font-size: 14px;
-    }
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Портфолио Kate Motsar — Technical Writer. API documentation, OpenAPI, SQL, Oracle, Docs-as-Code и технические руководства.">
+<title>Kate Motsar — Technical Writing Portfolio</title>
+<style>
+:root{--ink:#17212f;--muted:#64748b;--line:#e2e8f0;--paper:#f7f8fb;--blue:#2457d6;--navy:#101b32;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+header{background:var(--navy);color:#fff;padding:76px 0 68px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:#a9c1ff}.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.08;letter-spacing:-.04em;margin:14px 0}.hero p{max-width:720px;color:#d4dced;font-size:19px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:11px 17px;border-radius:9px;background:#fff;color:var(--navy);font-weight:700}.btn.outline{background:transparent;color:#fff;border:1px solid #71809a}
+nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:2}nav .wrap{display:flex;gap:24px;overflow:auto;padding:13px 0;white-space:nowrap}nav a{font-size:14px;font-weight:650;color:#334155}
+main{padding:30px 0 72px}section{scroll-margin-top:72px;margin:42px 0}.section-head{margin-bottom:20px}.section-head h2{font-size:28px;letter-spacing:-.025em;margin:0 0 5px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px;box-shadow:0 5px 20px #17212f08;display:flex;flex-direction:column}.card h3{font-size:20px;margin:0 0 8px}.card p{color:#475569;margin:0 0 14px}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:4px 0 15px}.chip{font-size:12px;border-radius:99px;padding:4px 9px;background:#edf2ff;color:#284b9b}.links{display:flex;gap:14px;flex-wrap:wrap;margin-top:auto;padding-top:12px;font-weight:650;font-size:14px}.detail{background:#fff;border:1px solid var(--line);border-radius:15px;padding:24px;margin:16px 0}.detail h3{margin:0 0 7px}.detail ul{padding-left:20px;margin:10px 0}.notice{border-left:4px solid #d6a33a;background:#fff8e8;padding:14px 17px;border-radius:5px;color:#604b20}.about{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}.panel h3{margin-top:0}.contact{background:var(--navy);color:#fff;border-radius:16px;padding:28px}.contact p{color:#d4dced}footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:13px}
+@media(max-width:720px){.grid,.about{grid-template-columns:1fr}.wrap{width:min(100% - 28px,1120px)}header{padding:55px 0}.hero p{font-size:17px}}
+</style>
 </head>
 <body>
-
-<aside class="sidebar">
-  <h1>Kate Motsar</h1>
-  <p>Technical Writer Portfolio</p>
-  <nav>
-    <a href="#top">Quick links</a>
-    <a href="#portfolio-ru">Portfolio RU</a>
-    <a href="#portfolio-en">Portfolio EN</a>
-    <a href="#filmgr-schema">FilmMgr Schema</a>
-  </nav>
-</aside>
-
-<div class="main">
-
-  <section id="top">
-    <h2>API-style docs from engineering code</h2>
-    <p>Портфолио технического писателя. Обезличенные кейсы, оформленные в стиле Docs-as-Code (endpoint-блоки, схемы, таблицы ограничений).</p>
-  </section>
-
-  <section id="portfolio-ru">
-    <h2>Портфолио RU</h2>
-    <p><strong>Кейс 1 · FilmMgr</strong> — Инструмент расчёта оптических покрытий (Delphi). Документирование под руководством научного руководителя. <a href="#filmgr-schema">См. схему →</a></p>
-    <p><strong>Кейс 2 · CAD-надстройка (AutoLISP)</strong> — Команды для пакетного нанесения координатных меток. Оформлено как command reference.</p>
-    <p><strong>Кейс 3 · АРМ учёта досье</strong> — Специализированное ПО для учёта документов (ЕСКД). 10 состояний синхронизации.</p>
-  </section>
-
-  <section id="portfolio-en">
-    <h2>Portfolio EN</h2>
-    <p><strong>Case 1 · FilmMgr</strong> — Optical coating calculator (Delphi). Engineering notes re-documented as API-style reference. <a href="#filmgr-schema">See schema →</a></p>
-    <p><strong>Case 2 · CAD Add-on (AutoLISP)</strong> — Batch coordinate labeling. Command reference style.</p>
-    <p><strong>Case 3 · Dossier Accounting (ARM)</strong> — Document management system (ESKD). 10 sync states.</p>
-  </section>
-
-  <section id="filmgr-schema">
-    <h2>FilmMgr · Оптические покрытия (Legacy Docs)</h2>
-    <p>
-      <span class="tag">Delphi</span>
-      <span class="tag">Object Pascal</span>
-      <span class="tag">Docs-as-Code</span>
-    </p>
-    <p><em>Инженерные расчеты (СПбГУАП), документирование под руководством научного руководителя.</em></p>
-
-    <div class="note">
-      <strong>Задача техписателя:</strong> Перевести неформальные инженерные заметки в структурированный guide: выделить ограничения, задокументировать баги, оформить в endpoint-стиле (input → constraints → output).
-    </div>
-
-    <h3>Схема алгоритма (Workflow)</h3>
-    <pre><code>┌──────────┐    ┌────────────┐    ┌────────────┐    ┌────────────┐
-│  Запуск  │───▶│  Подложка  │───▶│  Диапазон  │───▶│  Слои /    │
-│          │    │  + точки   │    │  волн / угол│    │  материалы │
-└──────────┘    └────────────┘    └────────────┘    └──────┬─────┘
-                                                            │
-┌──────────┐    ┌────────────┐    ┌────────────┐           │
-│  Экспорт │◀───│  Результат │◀───│ Оптимизация│◀──────────┘
-│ .fil/xlsx│    │  R/T/A %   │    │ (Пауэлл)   │
-└──────────┘    └────────────┘    └────────────┘</code></pre>
-
-    <h3>Таблица 1 · Пошаговый алгоритм</h3>
-    <table>
-      <tr><th>Шаг</th><th>Действие</th><th>Параметры</th><th>Ограничения</th></tr>
-      <tr><td><strong>1</strong></td><td>Запуск</td><td>—</td><td>—</td></tr>
-      <tr><td><strong>2</strong></td><td>Подложка и точки</td><td>CaF₂, BaF₂, Ge…</td><td>50–250 точек (рек. ~100)</td></tr>
-      <tr><td><strong>3</strong></td><td>Диапазон длин волн</td><td>2–8 мкм (или 2–20)</td><td>45°, S/P (нет non-pol)</td></tr>
-      <tr><td><strong>4</strong></td><td>Слои и материалы</td><td>*-film &gt; *-const</td><td>Толщина: λ₀/(4n)</td></tr>
-      <tr><td><strong>5</strong></td><td>Слой воздуха</td><td>Толщина 0.1</td><td>⚠️ <strong>Баг:</strong> влияет на результат → снять галочку</td></tr>
-      <tr><td><strong>6–7</strong></td><td>Оптимизация</td><td>Случайный поиск + Пауэлл</td><td>10–100 итераций, стоп при стабилизации</td></tr>
-      <tr><td><strong>8</strong></td><td>Экспорт</td><td>.fil, Excel, изображение</td><td>—</td></tr>
-    </table>
-
-    <h3>Endpoint-описание (как API)</h3>
-    <pre><code>endpoints:
-  - name: "initialize_session"
-    description: "Set substrate and spectral range"
-    input:
-      substrate:       { type: string, enum: [CaF2, BaF2, Ge] }
-      spectrum_points: { type: int, range: [50, 250] }
-      wavelength:      { type: array, range: [2.0, 20.0] }
-      angle:           { type: float, default: 45.0 }
-      polarization:    { type: enum, values: [S, P] }
-
-  - name: "optimize"
-    description: "Run numerical optimization"
-    method: "random search → Powell"
-    constraints:
-      merit_function: "deviation of R from 50% (lower is better)"
-      success_criteria: "value ≤ 2 (ideal &lt; 1)"
-    output: [R/T/A %, phase, .fil, xlsx]</code></pre>
-
-    <h3>Таблица 2 · Шпаргалка по материалам</h3>
-    <table>
-      <tr><th>Результат</th><th>Merit (чем меньше, тем лучше)</th><th>Стек материалов</th></tr>
-      <tr><td>🥇</td><td><strong>0.387</strong></td><td>{CaF₂, BaF₂, PbF₂, Ge, NaF}</td></tr>
-      <tr><td>🥈</td><td>0.503</td><td>{CaF₂, BaF₂, PbF₂, Ge, As₂Se₃}</td></tr>
-      <tr><td>🥉</td><td>0.614</td><td>{CaF₂, BaF₂, PbF₂, Ge, OldTe}</td></tr>
-      <tr><td>Пример</td><td>1.586</td><td>Отклонение R на 1.586% от 50%</td></tr>
-    </table>
-
-    <h3>⚠️ Таблица 3 · Известные проблемы (Known Issues)</h3>
-    <table>
-      <tr><th>Проблема</th><th>Влияние</th><th>Workaround</th></tr>
-      <tr><td><strong>Баг со слоем воздуха</strong></td><td>Меняет график R, хотя не должен</td><td>Снять галочку оптимизации для этого слоя</td></tr>
-      <tr><td><strong>Расхождение результатов</strong></td><td>Собственная программа и FilmMgr расходятся на несколько %</td><td>Вероятная ошибка в FilmMgr; оставить примечание</td></tr>
-    </table>
-  </section>
-
+<header id="top"><div class="wrap hero">
+<div class="eyebrow">Technical Writing · Portfolio</div>
+<h1>Kate Motsar</h1>
+<p>Техническая документация для разработчиков и пользователей: API reference, OpenAPI, технические руководства, описание процессов и документация сложных систем.</p>
+<div class="actions"><a class="btn" href="#projects">Посмотреть проекты</a><a class="btn outline" href="https://github.com/ekatmoz88-alt">GitHub profile ↗</a><a class="btn outline" href="https://www.linkedin.com/in/kate-motsar-b56974267/">LinkedIn ↗</a></div>
+</div></header>
+<nav><div class="wrap"><a href="#projects">Проекты</a><a href="#samples">Примеры работ</a><a href="#approach">Подход и инструменты</a><a href="#about">Обо мне</a><a href="#contact">Контакты</a></div></nav>
+<main class="wrap">
+<section id="projects"><div class="section-head"><h2>Избранные проекты</h2><p>Откройте сайт проекта или конкретный документ — ссылки ведут непосредственно к материалам.</p></div>
+<div class="grid">
+<article class="card"><h3>01 · API Documentation Portfolio</h3><p>Документация демонстрационного Orders API: спецификация, API reference, ошибки, webhooks и руководство для разработчиков.</p><div class="chips"><span class="chip">OpenAPI 3.1</span><span class="chip">REST API</span><span class="chip">Markdown</span><span class="chip">EN/RU</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/technical-writing-portfolio/">Сайт проекта ↗</a><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio">Исходные файлы ↗</a></div></article>
+<article class="card"><h3>02 · API Documentation Portfolio V2</h3><p>Расширенный пример API-документации: OpenAPI-контракты, структура портала, анализ SOAP-интеграций и автоматизация публикации.</p><div class="chips"><span class="chip">OpenAPI</span><span class="chip">SOAP</span><span class="chip">Jekyll</span><span class="chip">Docs-as-Code</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/">Сайт проекта ↗</a><a href="https://github.com/ekatmoz88-alt/api-docs-portfolio-v2">Исходные файлы ↗</a></div></article>
+<article class="card"><h3>03 · Fintech Documentation Demo</h3><p>Документирование демонстрационного процесса crypto on-ramp: пользовательские сценарии, KYC, классификация персональных данных и аудит.</p><div class="chips"><span class="chip">Process flows</span><span class="chip">Security</span><span class="chip">KYC</span><span class="chip">Specifications</span></div><div class="links"><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo">Проект и документы ↗</a><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/tree/main/security">Примеры security-документов ↗</a></div></article>
+<article class="card"><h3>04 · Technical Writing Workflows</h3><p>Практика Docs-as-Code: автоматическая проверка OpenAPI, Markdown и ссылок с помощью CI workflow.</p><div class="chips"><span class="chip">GitHub Actions</span><span class="chip">Spectral</span><span class="chip">Markdownlint</span><span class="chip">Lychee</span></div><div class="links"><a href="https://ekatmoz88-alt.github.io/technical-writing-workflows/">Сайт проекта ↗</a><a href="https://github.com/ekatmoz88-alt/technical-writing-workflows">Исходные файлы ↗</a></div></article>
+</div></section>
+<section id="samples"><div class="section-head"><h2>Примеры документов</h2><p>Несколько артефактов, которые можно открыть напрямую.</p></div>
+<div class="grid">
+<div class="detail"><h3>API reference и developer guide</h3><ul><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/docs/api-reference.md">API Reference</a></li><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/docs/developer-guide.md">Developer Guide</a></li><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/docs/webhooks.md">Webhooks Guide</a></li><li><a href="https://github.com/ekatmoz88-alt/technical-writing-portfolio/blob/main/openapi/openapi.yaml">OpenAPI specification</a></li></ul></div>
+<div class="detail"><h3>Процессы и безопасность</h3><ul><li><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/blob/main/flows/04-crypto-onramp.md">Crypto on-ramp flow</a></li><li><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/blob/main/security/pii-data-classification.md">PII data classification</a></li><li><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo/blob/main/security/audit-log-spec.md">Audit log specification</a></li></ul></div>
 </div>
-
-</body>
-</html>{% endraw %}
+<div class="notice"><strong>Прозрачность:</strong> API и fintech-примеры являются учебными/демонстрационными материалами, а не документацией действующих коммерческих сервисов.</div>
+</section>
+<section id="approach"><div class="section-head"><h2>Подход и инструменты</h2><p>Документация как часть жизненного цикла продукта.</p></div><div class="grid">
+<div class="detail"><h3>Что демонстрируют работы</h3><ul><li>Структурирование информации и проектирование навигации.</li><li>Описание API, параметров, схем, ответов и ошибок.</li><li>Пошаговые инструкции и описание бизнес-процессов.</li><li>Документация в Markdown и управление изменениями через Git.</li><li>Проверка качества и согласованности документации.</li></ul></div>
+<div class="detail"><h3>Инструменты и форматы</h3><p>OpenAPI 3.1 · YAML · Markdown · Git/GitHub · REST · SOAP · SQL · Oracle · GitHub Actions · HTML/CSS</p><p>Материалы представлены на английском и русском языках там, где это предусмотрено проектом.</p></div>
+</div></section>
+<section id="about"><div class="section-head"><h2>Обо мне</h2></div><div class="about"><div class="panel"><h3>Kate Motsar · Technical Writer</h3><p>Создаю понятную техническую документацию на основе анализа требований, структур данных, API и рабочих процессов. В портфолио собраны примеры документации, спецификаций и Docs-as-Code практик.</p><p>Открыта к возможностям в Technical Writing, API Documentation и Developer Documentation.</p></div><div class="contact" id="contact"><h3>Связаться</h3><p>Буду рада обсудить задачи по технической документации.</p><p><a style="color:#fff" href="https://www.linkedin.com/in/kate-motsar-b56974267/">LinkedIn ↗</a><br><a style="color:#fff" href="https://github.com/ekatmoz88-alt">GitHub ↗</a></p></div></div></section>
+</main>
+<footer><div class="wrap">© Kate Motsar · Technical Writing Portfolio · <a href="#top">Наверх ↑</a></div></footer>
+</body></html>
