@@ -233,11 +233,41 @@ export default function App() {
         <section className="panel" style={{marginTop:16}} id="portfolio">
           <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>5</span></h2></div></div>
           <div className="projects-grid">
-            <article className="project-card"><h3>API Documentation Portfolio V2</h3><p>REST APIs, OpenAPI 3.1, SOAP/WSDL case studies, API references, documentation architecture and automated validation.</p><a href="https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/" target="_blank" rel="noreferrer">Live site ↗</a> · <a href="https://github.com/ekatmoz88-alt/api-docs-portfolio-v2" target="_blank" rel="noreferrer">Source ↗</a></article>
-            <article className="project-card"><h3>Cobalt UI Navigation Docs</h3><p>Source-based C++ component documentation: architecture, native interfaces, lifecycle, focus management, callbacks and compatibility behavior.</p><a href="https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/" target="_blank" rel="noreferrer">Live site ↗</a> · <a href="https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs" target="_blank" rel="noreferrer">Source ↗</a></article>
-            <article className="project-card"><h3>Territory System Documentation</h3><p>System documentation covering Oracle database models, API endpoints, JSON structures and mappings between source code and data models.</p><a href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site ↗</a> · <a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></article>
-            <article className="project-card"><h3>ADP201P4 Hardware Specification</h3><p>Engineering documentation for a DSP carrier board: processing architecture, memory mapping, FPGA interface, registers and connector pinouts.</p><a href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">Source ↗</a></article>
-            <article className="project-card"><h3>UMMS SOAP API Documentation</h3><p>Enterprise SOAP integration and client documentation, with a clear separation between public materials and restricted NDA documentation.</p><a href="https://github.com/ekatmoz88-alt/umms-docs" target="_blank" rel="noreferrer">Source ↗</a></article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">API DOCUMENTATION</span><span className="project-number">01</span></div>
+              <h3>API Documentation Portfolio V2</h3>
+              <p>REST APIs, OpenAPI 3.1, SOAP/WSDL case studies, API references, documentation architecture and automated validation.</p>
+              <div className="project-tags"><span>OpenAPI</span><span>REST</span><span>SOAP</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/api-docs-portfolio-v2" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">C++ / UI COMPONENTS</span><span className="project-number">02</span></div>
+              <h3>Cobalt UI Navigation Docs</h3>
+              <p>Source-based C++ component documentation: architecture, native interfaces, lifecycle, focus management, callbacks and compatibility behavior.</p>
+              <div className="project-tags"><span>C++</span><span>API reference</span><span>Lifecycle</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">DATA / SYSTEMS</span><span className="project-number">03</span></div>
+              <h3>Territory System Documentation</h3>
+              <p>System documentation covering Oracle database models, API endpoints, JSON structures and mappings between source code and data models.</p>
+              <div className="project-tags"><span>Oracle</span><span>JSON</span><span>Data models</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">04</span></div>
+              <h3>ADP201P4 Hardware Specification</h3>
+              <p>Engineering documentation for a DSP carrier board: processing architecture, memory mapping, FPGA interface, registers and connector pinouts.</p>
+              <div className="project-tags"><span>DSP</span><span>FPGA</span><span>Registers</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">05</span></div>
+              <h3>UMMS SOAP API Documentation</h3>
+              <p>Enterprise SOAP integration and client documentation, with a clear separation between public materials and restricted NDA documentation.</p>
+              <div className="project-tags"><span>SOAP</span><span>WSDL</span><span>Integration</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://github.com/ekatmoz88-alt/umms-docs" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+            </article>
           </div>
         </section>
         <footer className="footer">
