@@ -1,8 +1,6 @@
-name: Deploy to GitHub Pages
+name: Legacy manual GitHub Pages deployment
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +9,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-legacy
   cancel-in-progress: true
 
 jobs:
