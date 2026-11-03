@@ -11,13 +11,19 @@ Architected multi-service RESTful and WebSocket data models using the ViWi/RSI a
 *   **Artifact Mapping:** Built live runtime flow dependencies using automated `mermaid.js` sequence schemas tracking contextual search gating.
 *   **Documentation Link:** [See Core API Specification →](vwa-navigation-spec.md)
 
-### Case 2 · Film Manager module (Optical Coating Calculator)
+### Case 2 · FilmMgr (Numerical Math & Optical Coatings)
 Transformed non-formal engineering computation assets and numerical algorithms (SUAI) into an API-style data-gating manual. Formatted low-level implementation logic tracking multidimensional optimization cycles (stochastic search layered with Powell's coordinate descent).
 *   **System Constraints:** Formatted explicit hardware boundary indexes: substrates validation arrays (CaF₂, BaF₂, Ge), spectral infrared bandwidths (2.0–20.0 µm), polarization subsets (S/P matrices), and automated data array checkpoints (≤100 points baseline limit).
 *   **Lifecycle Logging:** Cataloged systemic core engine runtime anomalies (Air-layer node calculations loop offset) with actionable mitigation workarounds.
 *   **Documentation Link:** [See Schema & Legacy Reference →](filmmgr-schema.md)
 
-### Case 3 · Enterprise Dossier Management Subsystem (ARM Architecture)
+### Case 3 · CAD Core Add-on (AutoLISP Platform)
+Engineered an architectural command-reference manual for low-level batch geometric coordinate processing scripts executing inside automated CAD software stations.
+*   **Command References:** Specified execution interfaces for `zeiss pt height` (vector height displacement and volumetric X/Y/Z string marker injections) and `coord list mode` pipelines.
+*   **Data Serialization:** Automated functional logic references routing automated geometric matrix extractions directly into target serialization files (.SDR point clouds and raw .GRE telemetry logs).
+*   **Localization:** Deployed an embedded dual-state input validation layout with runtime RU/EN resource switching and structured error-code propagation models.
+
+### Case 4 · Enterprise Dossier Management Subsystem (ARM Architecture)
 Authored comprehensive lifecycle manuals and technical data flow architecture books for an automated hardware-integrated document accounting and verification system.
 *   **Regulated Standards:** Enforced strict compliance layout mappings aligned with unified software documentation regulations (GOST 19/34 frameworks) and standardized design data constraints (ESKD registries).
 *   **State Machine Mapping:** Modeled 10 internal operational synchronization boundaries guiding document states across structural lifecycle stages (Search → Create → Export → Physical Print).
