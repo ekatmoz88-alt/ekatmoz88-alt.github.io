@@ -37,11 +37,13 @@ Documentation for an Oracle 11g data platform, including relational data structu
 ### 6. ADP201P4 Hardware Specification
 Engineering documentation for a DSP carrier board, covering processing architecture, memory mapping, FPGA interfaces, registers, and connector pinouts.
 
+- [Published documentation](https://ekatmoz88-alt.github.io/adp201p4-hardware-spec/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/adp201p4-hardware-spec)
 
 ### 7. UMMS SOAP API Documentation
 An anonymized enterprise SOAP documentation case covering service operations, WSDL/XML structures, integration concepts, and the separation of public portfolio material from restricted documentation.
 
+- [Published documentation](https://ekatmoz88-alt.github.io/umms-docs/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/umms-docs)
 
 ## Documentation skills and tools
