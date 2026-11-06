@@ -261,6 +261,15 @@ export default function App() {
               <div className="project-tags"><span>Oracle 11g</span><span>Data Modeling</span><span>SQL</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
+
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">SOFTWARE ARCHITECTURE REVIEW</span><span className="project-number">04A</span></div>
+              <h3>Application Suite Architecture Review</h3>
+              <p>Source-based review of ModuleMobile, ModuleStationary and Printer / PassportPaint, covering component responsibilities, UMMS SOAP integration, XML-based file exchange, encryption flow and SQLite data access. Findings distinguish observed source behavior from unverified assumptions.</p>
+              <div className="project-tags"><span>Software Architecture</span><span>SOAP / XML</span><span>SQLite</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/docs/architecture/application-suite-review.md" target="_blank" rel="noreferrer">Read architecture review <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source repository ↗</a></div>
+            </article>
+
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">05</span></div>
               <h3>ADP201P4 Hardware Specification</h3>
