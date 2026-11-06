@@ -231,7 +231,7 @@ export default function App() {
         )}
 
         <section className="panel" style={{marginTop:16}} id="portfolio">
-          <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>5</span></h2></div></div>
+          <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>6</span></h2></div></div>
           <div className="projects-grid">
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">API DOCUMENTATION</span><span className="project-number">01</span></div>
@@ -255,14 +255,21 @@ export default function App() {
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">04</span></div>
+              <div className="project-card-top"><span className="project-type">ORACLE DATABASE DOCUMENTATION</span><span className="project-number">04</span></div>
+              <h3>Global11 — Oracle Database Documentation</h3>
+              <p>Technical documentation for an Oracle Global 11g data platform, covering the relational data model, data dictionary, OLAP patterns, and SQL scripts and scenarios.</p>
+              <div className="project-tags"><span>Oracle 11g</span><span>Data Modeling</span><span>SQL</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">05</span></div>
               <h3>ADP201P4 Hardware Specification</h3>
               <p>Engineering documentation for a DSP carrier board: processing architecture, memory mapping, FPGA interface, registers and connector pinouts.</p>
               <div className="project-tags"><span>DSP</span><span>FPGA</span><span>Registers</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">05</span></div>
+              <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">06</span></div>
               <h3>UMMS SOAP API Documentation</h3>
               <p>Enterprise SOAP integration and client documentation, with a clear separation between public materials and restricted NDA documentation.</p>
               <div className="project-tags"><span>SOAP</span><span>WSDL</span><span>Integration</span></div>
