@@ -5,7 +5,7 @@
 ## Избранные проекты
 
 ### 1. API Documentation Portfolio V2
-Демонстрационный Docs-as-Code-проект на основе условного REST API заказов. Включает контракт OpenAPI 3.1, схемы, примеры запросов и ответов, описание ошибок, интерактивную документацию Redoc и автоматические проверки Spectral/Redocly в GitHub Actions.
+Демонстрационный Docs-as-Code-проект на основе развёрнутого REST API заказов. Включает контракт OpenAPI 3.1, схемы, примеры запросов и ответов, описание ошибок, интерактивную документацию Redoc и автоматические проверки Spectral/Redocly в GitHub Actions.
 
 - [Опубликованная API-документация](https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/openapi/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/api-docs-portfolio-v2)
@@ -16,35 +16,62 @@
 - [Опубликованная документация](https://ekatmoz88-alt.github.io/deshifrator-docs/)
 - [Репозиторий документации](https://github.com/ekatmoz88-alt/deshifrator-docs)
 
-### 3. Документация системы «Территория»
-Структурирование технических материалов: логическая и физическая модели БД, описания таблиц и полей, индексы, API/структуры данных и связи между исходными материалами и моделями.
+### 3. Система паспортного учёта «Паспорт»
+Техническая документация отдельной системы паспортного учёта: модели Oracle DB, API/структуры данных и связи между исходными материалами и моделями. Это система «Паспорт», а не ППО «Территория» и не АРМ «Дискриптор».
 
 - [Опубликованная документация](https://ekatmoz88-alt.github.io/territory-docs/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/territory-docs)
 
-### 4. Cobalt UI Navigation Documentation
+### 4. АРМ «Дискриптор» — автоматизированное рабочее место по оформлению документов
+Самостоятельный кейс архитектуры и требований АРМ: стационарная и мобильная станции, функциональные подсистемы, аппаратно-программные границы, обмен данными и уровни доверия.
+
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/descriptor-arm-spec/)
+- [Репозиторий GitHub](https://github.com/ekatmoz88-alt/descriptor-arm-spec)
+
+### 5. ППО «Территория» — архив enterprise-информационной системы
+Технический архив отдельной информационной системы ФМС «Территория»: функциональные модули, архитектура развёртывания, внешние интеграции, требования к платформе и жизненный цикл тестирования.
+
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/ppo-territory-archive/)
+- [Репозиторий GitHub](https://github.com/ekatmoz88-alt/ppo-territory-archive)
+
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/territory-docs/)
+- [Репозиторий GitHub](https://github.com/ekatmoz88-alt/territory-docs)
+
+### 6. Cobalt UI Navigation Documentation
 Документация C++ UI-компонента на основе анализа исходного кода: архитектура, абстракция native-интерфейса, жизненный цикл компонента, управление фокусом, callbacks, очереди обновлений и совместимость.
 
 - [Опубликованная документация](https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs)
 
-### 5. Global11 — Oracle Data Platform
+### 7. Global11 — Oracle Data Platform
 Документация платформы данных Oracle 11g: реляционная структура, словарь данных, OLAP-подходы, SQL-скрипты и сценарии.
 
 - [Опубликованная документация](https://ekatmoz88-alt.github.io/global11-demo-data-platform/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/global11-demo-data-platform)
 
-### 6. ADP201P4 — спецификация аппаратуры
-Инженерная документация платы DSP: архитектура обработки, карта памяти, интерфейсы FPGA, регистры и распиновка разъёмов.
+### 8. ADP201P4 — техническая документация модуля обработки сигналов
+Инженерная документация модуля DSP: архитектура обработки, локальная память, интерфейс ADM и внешние разъёмы.
 
 - [Опубликованная документация](https://ekatmoz88-alt.github.io/adp201p4-hardware-spec/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/adp201p4-hardware-spec)
 
-### 7. UMMS SOAP API Documentation
+### 9. UMMS SOAP API Documentation
 Обезличенный кейс документации enterprise SOAP-интеграции: операции сервиса, структуры WSDL/XML, принципы интеграции и разделение публичных материалов и документации ограниченного доступа.
 
 - [Опубликованная документация](https://ekatmoz88-alt.github.io/umms-docs/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/umms-docs)
+
+### 10. Fintech Documentation Demo
+Демонстрационный кейс вымышленной операторской консоли crypto-onramp: пользовательские и операторские сценарии KYC/onboarding, классификация персональных данных и аудит действий.
+
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/fintech-docs-demo/)
+- [Репозиторий GitHub](https://github.com/ekatmoz88-alt/fintech-docs-demo)
+
+### 11. Technical Writing Workflows
+Пример Docs-as-Code-конвейера: автоматическая проверка OpenAPI через Spectral, Markdown linting и проверка ссылок Lychee в GitHub Actions.
+
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/technical-writing-workflows/)
+- [Репозиторий GitHub](https://github.com/ekatmoz88-alt/technical-writing-workflows)
 
 ## Навыки и инструменты документации
 
