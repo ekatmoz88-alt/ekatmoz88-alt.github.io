@@ -248,9 +248,9 @@ export default function App() {
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">DATA / SYSTEMS</span><span className="project-number">03</span></div>
-              <h3>Territory System Documentation</h3>
-              <p>System documentation covering Oracle database models, API endpoints, JSON structures and source-to-model mappings. Includes an overview of the technical-project document (code 53281996.425530.9-4757-3.П6.01) covering logical and physical database structure. The available logical-model excerpts cover core entities and case workflows, operation lifecycles and electronic-signature links, person and organization records, document quality controls, Russian and foreign passports, residence registration, address-reference requests, invitations, migration-card intake, dictionaries, address hierarchies, access roles, signals, audit logs and biometrics. The physical-structure contents list 381 numbered tables, fields, indexes and a Sybase PowerDesigner model.</p>
+              <div className="project-card-top"><span className="project-type">PASSPORT ACCOUNT SYSTEM</span><span className="project-number">03</span></div>
+              <h3>Passport Account System Documentation</h3>
+              <p>Technical documentation for a separate passport-accounting information system, including Oracle database models, API endpoints, JSON structures and source-to-model mappings. The available materials describe passport and residence-registration workflows, person and organization records, document quality controls, address references, dictionaries, access roles, audit logs and related data structures. This is the Passport Account System, not the FMS PPO Territory archive or the independent ARM Descriptor workstation.</p>
               <div className="project-tags"><span>Oracle</span><span>Database Documentation</span><span>Data Models</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://ekatmoz88-alt.github.io/territory-docs/database/physical-structure-specification" target="_blank" rel="noreferrer">Physical DB structure (2014) ↗</a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
@@ -274,14 +274,43 @@ export default function App() {
               <h3>ADP201P4 Hardware Specification</h3>
               <p>Engineering documentation for a DSP carrier board: processing architecture, memory mapping, FPGA interface, registers and connector pinouts.</p>
               <div className="project-tags"><span>DSP</span><span>FPGA</span><span>Registers</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/adp201p4-hardware-spec/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">07</span></div>
               <h3>UMMS SOAP API Documentation</h3>
               <p>Enterprise SOAP integration and client documentation, with a clear separation between public materials and restricted NDA documentation.</p>
               <div className="project-tags"><span>SOAP</span><span>WSDL</span><span>Integration</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://github.com/ekatmoz88-alt/umms-docs" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/umms-docs/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/umms-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
+
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">DOCUMENT-PROCESSING WORKSTATION</span><span className="project-number">08</span></div>
+              <h3>ARM Descriptor</h3>
+              <p>Independent workstation architecture and requirements documentation, covering stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels.</p>
+              <div className="project-tags"><span>System Architecture</span><span>Requirements</span><span>Data Exchange</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/descriptor-arm-spec/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/descriptor-arm-spec" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">ENTERPRISE INFORMATION SYSTEM</span><span className="project-number">09</span></div>
+              <h3>FMS Territory — PPO Archive</h3>
+              <p>Technical archive documenting the separate FMS Territory enterprise information system, its functional modules, deployment architecture, external integrations, platform requirements and lifecycle testing.</p>
+              <div className="project-tags"><span>Enterprise Architecture</span><span>Integrations</span><span>System Documentation</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/ppo-territory-archive/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/ppo-territory-archive" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">FINTECH · WORKFLOWS &amp; SECURITY</span><span className="project-number">10</span></div>
+              <h3>Fintech Documentation Demo</h3>
+              <p>Fictional crypto-onramp operator-console case study covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.</p>
+              <div className="project-tags"><span>Operational Workflows</span><span>Data Classification</span><span>Audit Logging</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/fintech-docs-demo/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">DOCS-AS-CODE · CI QUALITY</span><span className="project-number">11</span></div>
+              <h3>Technical Writing Workflows</h3>
+              <p>Automated documentation-quality pipeline demonstrating OpenAPI validation with Spectral, Markdown linting and link checking with Lychee in GitHub Actions.</p>
+              <div className="project-tags"><span>Spectral</span><span>Markdown Linting</span><span>GitHub Actions</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/technical-writing-workflows/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/technical-writing-workflows" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
             </article>
           </div>
         </section>
