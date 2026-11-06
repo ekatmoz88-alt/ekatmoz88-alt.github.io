@@ -262,22 +262,22 @@ export default function App() {
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">DESKTOP SOFTWARE DOCUMENTATION</span><span className="project-number">04A</span></div>
-              <h3>Deshifrator — Desktop Application Documentation</h3>
-              <p>Artifact-based technical documentation of a .NET Framework 4.5 desktop system and its stationary and mobile modules. Covers component boundaries, SQLite database schemas, SOAP and FIAS/Elasticsearch configuration, OCR dependencies, and file-based exchange. Confirmed configuration facts are distinguished from unverified runtime assumptions.</p>
-              <div className="project-tags"><span>.NET / WPF</span><span>SQLite</span><span>SOAP / Elasticsearch</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/deshifrator-docs/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
+              <div className="project-card-top"><span className="project-type">DESKTOP APPLICATION SUITE DOCUMENTATION</span><span className="project-number">05</span></div>
+              <h3>Deshifrator — ModuleMobile, ModuleStationary &amp; PassportPaint</h3>
+              <p>Technical documentation for the complete documented application scope: ModuleMobile search and UMMS SOAP workflows; ModuleStationary import, synchronization and SQLite storage; and Printer / PassportPaint passport-layout editing, MRZ generation and printing. Also covers encrypted file exchange, shared WPF components, FIAS/Elasticsearch and OCR dependencies. The review is based on available descriptions and selected source excerpts; it is not a complete source-code transfer.</p>
+              <div className="project-tags"><span>.NET Framework / WPF</span><span>SOAP / XML / SQLite</span><span>Passport Layouts &amp; MRZ</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/deshifrator-docs/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/application-suite-review.md" target="_blank" rel="noreferrer">Application suite review ↗</a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/repository-completeness.md" target="_blank" rel="noreferrer">Documentation inventory ↗</a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
 
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">05</span></div>
+              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">06</span></div>
               <h3>ADP201P4 Hardware Specification</h3>
               <p>Engineering documentation for a DSP carrier board: processing architecture, memory mapping, FPGA interface, registers and connector pinouts.</p>
               <div className="project-tags"><span>DSP</span><span>FPGA</span><span>Registers</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">View repository <span>↗</span></a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">06</span></div>
+              <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">07</span></div>
               <h3>UMMS SOAP API Documentation</h3>
               <p>Enterprise SOAP integration and client documentation, with a clear separation between public materials and restricted NDA documentation.</p>
               <div className="project-tags"><span>SOAP</span><span>WSDL</span><span>Integration</span></div>
