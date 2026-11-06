@@ -5,7 +5,7 @@ Public documentation samples and anonymized technical case studies. Each project
 ## Selected projects
 
 ### 1. API Documentation Portfolio V2
-A documentation-as-code demonstration built around an illustrative Orders REST API. Includes an OpenAPI 3.1 contract, schemas, request/response examples, error responses, an interactive Redoc reference, and automated checks with Spectral and Redocly in GitHub Actions.
+A documentation-as-code demonstration built around a deployed demo Orders REST API. Includes an OpenAPI 3.1 contract, schemas, request/response examples, error responses, an interactive Redoc reference, and automated checks with Spectral and Redocly in GitHub Actions.
 
 - [Published API reference](https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/openapi/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/api-docs-portfolio-v2)
@@ -16,35 +16,62 @@ Historical software-documentation case associated with Scientific Instruments, I
 - [Published documentation](https://ekatmoz88-alt.github.io/deshifrator-docs/)
 - [Documentation repository](https://github.com/ekatmoz88-alt/deshifrator-docs)
 
-### 3. Territory System Documentation
-Structured documentation based on available technical materials, including logical and physical database models, table and field descriptions, indexes, API/data structures, and source-to-model relationships.
+### 3. Passport Account System Documentation
+Technical documentation for the separate passport-accounting information system, including Oracle database models, API/data structures, and source-to-model relationships. This is the Passport Account System, not the FMS PPO Territory archive.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/territory-docs/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/territory-docs)
 
-### 4. Cobalt UI Navigation Documentation
+### 4. ARM Descriptor — Document Processing Workstation
+Independent workstation architecture and requirements documentation covering stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels.
+
+- [Published documentation](https://ekatmoz88-alt.github.io/descriptor-arm-spec/)
+- [GitHub repository](https://github.com/ekatmoz88-alt/descriptor-arm-spec)
+
+### 5. FMS Territory — PPO Archive
+Technical archive for the separate FMS Territory enterprise information system, covering functional modules, deployment architecture, external integrations, platform requirements and lifecycle testing.
+
+- [Published documentation](https://ekatmoz88-alt.github.io/ppo-territory-archive/)
+- [GitHub repository](https://github.com/ekatmoz88-alt/ppo-territory-archive)
+
+- [Published documentation](https://ekatmoz88-alt.github.io/territory-docs/)
+- [GitHub repository](https://github.com/ekatmoz88-alt/territory-docs)
+
+### 6. Cobalt UI Navigation Documentation
 Source-based C++ component documentation covering architecture, native interface abstraction, component lifecycle, focus management, callbacks, queued updates, and compatibility behavior.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs)
 
-### 5. Global11 — Oracle Data Platform
+### 7. Global11 — Oracle Data Platform
 Documentation for an Oracle 11g data platform, including relational data structures, data dictionary materials, OLAP patterns, and SQL scripts and scenarios.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/global11-demo-data-platform/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/global11-demo-data-platform)
 
-### 6. ADP201P4 Hardware Specification
-Engineering documentation for a DSP carrier board, covering processing architecture, memory mapping, FPGA interfaces, registers, and connector pinouts.
+### 8. ADP201P4 Hardware Specification
+Engineering documentation for a DSP signal-processing module, covering processing architecture, local memory, the ADM interface and external connectors.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/adp201p4-hardware-spec/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/adp201p4-hardware-spec)
 
-### 7. UMMS SOAP API Documentation
+### 9. UMMS SOAP API Documentation
 An anonymized enterprise SOAP documentation case covering service operations, WSDL/XML structures, integration concepts, and the separation of public portfolio material from restricted documentation.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/umms-docs/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/umms-docs)
+
+### 10. Fintech Documentation Demo
+A fictional crypto-onramp operator-console case study covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.
+
+- [Published documentation](https://ekatmoz88-alt.github.io/fintech-docs-demo/)
+- [GitHub repository](https://github.com/ekatmoz88-alt/fintech-docs-demo)
+
+### 11. Technical Writing Workflows
+A Docs-as-Code quality pipeline demonstrating OpenAPI validation with Spectral, Markdown linting and link checking with Lychee in GitHub Actions.
+
+- [Published documentation](https://ekatmoz88-alt.github.io/technical-writing-workflows/)
+- [GitHub repository](https://github.com/ekatmoz88-alt/technical-writing-workflows)
 
 ## Documentation skills and tools
 
