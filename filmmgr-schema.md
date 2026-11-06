@@ -1,6 +1,6 @@
 # FilmMgr Optical Coating Calculator — Configuration Schema
 *Author: Kate Motsar (original engineering notes: 29.03.10, SPbGUAP)*
-*Re-documented as Docs-as-Code for portfolio purposes*
+*Re-documented as Docs-as-Code for portfolio purposes. This is a historical engineering-notes case study, not a statement about a currently maintained production application.*
 
 ```yaml
 version: "1.0"
