@@ -250,7 +250,7 @@ export default function App() {
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">DATA / SYSTEMS</span><span className="project-number">03</span></div>
               <h3>Territory System Documentation</h3>
-              <p>System documentation covering Oracle database models, API endpoints, JSON structures and source-to-model mappings. Includes an overview of the technical-project document (code 53281996.425530.9-4757-3.П6.01) covering logical and physical database structure; the physical-structure contents list 381 numbered tables, fields, indexes and a Sybase PowerDesigner model.</p>
+              <p>System documentation covering Oracle database models, API endpoints, JSON structures and source-to-model mappings. Includes an overview of the technical-project document (code 53281996.425530.9-4757-3.П6.01) covering logical and physical database structure. The logical model covers 25 functional sections; the physical-structure contents list 381 numbered tables, fields, indexes and a Sybase PowerDesigner model.</p>
               <div className="project-tags"><span>Oracle</span><span>Database Documentation</span><span>Data Models</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://ekatmoz88-alt.github.io/territory-docs/database/physical-structure-specification" target="_blank" rel="noreferrer">Physical DB structure (2014) ↗</a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
