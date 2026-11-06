@@ -231,7 +231,7 @@ export default function App() {
         )}
 
         <section className="panel" style={{marginTop:16}} id="portfolio">
-          <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>6</span></h2></div></div>
+          <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>7</span></h2></div></div>
           <div className="projects-grid">
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">API DOCUMENTATION</span><span className="project-number">01</span></div>
@@ -261,13 +261,12 @@ export default function App() {
               <div className="project-tags"><span>Oracle 11g</span><span>Data Modeling</span><span>SQL</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
-
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">SOFTWARE ARCHITECTURE REVIEW</span><span className="project-number">04A</span></div>
-              <h3>Application Suite Architecture Review</h3>
-              <p>Source-based review of ModuleMobile, ModuleStationary and Printer / PassportPaint, covering component responsibilities, UMMS SOAP integration, XML-based file exchange, encryption flow and SQLite data access. Findings distinguish observed source behavior from unverified assumptions.</p>
-              <div className="project-tags"><span>Software Architecture</span><span>SOAP / XML</span><span>SQLite</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/docs/architecture/application-suite-review.md" target="_blank" rel="noreferrer">Read architecture review <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source repository ↗</a></div>
+              <div className="project-card-top"><span className="project-type">DESKTOP SOFTWARE DOCUMENTATION</span><span className="project-number">04A</span></div>
+              <h3>Deshifrator — Desktop Application Documentation</h3>
+              <p>Artifact-based technical documentation of a .NET Framework 4.5 desktop system and its stationary and mobile modules. Covers component boundaries, SQLite database schemas, SOAP and FIAS/Elasticsearch configuration, OCR dependencies, and file-based exchange. Confirmed configuration facts are distinguished from unverified runtime assumptions.</p>
+              <div className="project-tags"><span>.NET / WPF</span><span>SQLite</span><span>SOAP / Elasticsearch</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/deshifrator-docs/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
 
             <article className="project-card">
