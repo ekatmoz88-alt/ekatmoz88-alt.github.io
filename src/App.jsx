@@ -250,9 +250,9 @@ export default function App() {
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">DATA / SYSTEMS</span><span className="project-number">03</span></div>
               <h3>Territory System Documentation</h3>
-              <p>System documentation covering Oracle database models, API endpoints, JSON structures and mappings between source code and data models.</p>
-              <div className="project-tags"><span>Oracle</span><span>JSON</span><span>Data models</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
+              <p>System documentation covering Oracle database models, API endpoints, JSON structures and source-to-model mappings. Includes a separate overview of the 2014 physical database specification, whose table of contents lists 381 numbered tables, fields, indexes and a Sybase PowerDesigner model.</p>
+              <div className="project-tags"><span>Oracle</span><span>Database Documentation</span><span>Data Models</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://ekatmoz88-alt.github.io/territory-docs/database/physical-structure-specification" target="_blank" rel="noreferrer">Physical DB structure (2014) ↗</a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">ORACLE DATABASE DOCUMENTATION</span><span className="project-number">04</span></div>
