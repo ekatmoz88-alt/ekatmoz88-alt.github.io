@@ -37,11 +37,13 @@
 ### 6. ADP201P4 — спецификация аппаратуры
 Инженерная документация платы DSP: архитектура обработки, карта памяти, интерфейсы FPGA, регистры и распиновка разъёмов.
 
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/adp201p4-hardware-spec/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/adp201p4-hardware-spec)
 
 ### 7. UMMS SOAP API Documentation
 Обезличенный кейс документации enterprise SOAP-интеграции: операции сервиса, структуры WSDL/XML, принципы интеграции и разделение публичных материалов и документации ограниченного доступа.
 
+- [Опубликованная документация](https://ekatmoz88-alt.github.io/umms-docs/)
 - [Репозиторий GitHub](https://github.com/ekatmoz88-alt/umms-docs)
 
 ## Навыки и инструменты документации
