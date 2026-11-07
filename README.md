@@ -7,8 +7,8 @@ This repository contains the source for the public GitHub Pages portfolio websit
 ## Published site
 
 - [Portfolio website](https://ekatmoz88-alt.github.io/)
-- [English portfolio](https://ekatmoz88-alt.github.io/portfolio-en/)
-- [Russian portfolio](https://ekatmoz88-alt.github.io/portfolio-ru/)
+- [English portfolio](https://ekatmoz88-alt.github.io/portfolio-en.html)
+- [Russian portfolio](https://ekatmoz88-alt.github.io/portfolio-ru.html)
 - [Interactive GitHub dashboard](https://github-profile-dashboard-vite.vercel.app/)
 - [Bilingual repository audit](https://github-profile-dashboard-vite.vercel.app/portfolio-audit.html)
 
