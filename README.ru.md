@@ -7,8 +7,8 @@
 ## Опубликованные страницы
 
 - [Сайт портфолио](https://ekatmoz88-alt.github.io/)
-- [Портфолио на английском](https://ekatmoz88-alt.github.io/portfolio-en/)
-- [Портфолио на русском](https://ekatmoz88-alt.github.io/portfolio-ru/)
+- [Портфолио на английском](https://ekatmoz88-alt.github.io/portfolio-en.html)
+- [Портфолио на русском](https://ekatmoz88-alt.github.io/portfolio-ru.html)
 - [Интерактивный GitHub-дашборд](https://github-profile-dashboard-vite.vercel.app/)
 - [Двуязычный аудит репозиториев](https://github-profile-dashboard-vite.vercel.app/portfolio-audit.html)
 
