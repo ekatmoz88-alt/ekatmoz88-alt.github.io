@@ -285,8 +285,8 @@ export default function App() {
 
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">DOCUMENT-PROCESSING WORKSTATION</span><span className="project-number">08</span></div>
-              <h3>ARM Descriptor</h3>
-              <p>Independent workstation architecture and requirements documentation, covering stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels.</p>
+              <h3>Deshifrator — Workstation Specification &amp; Architecture</h3>
+              <p>Complementary workstation architecture and requirements documentation for the same Deshifrator project described in the desktop-application card. Covers stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels. ARM Descriptor is an earlier historical label, not a separate product.</p>
               <div className="project-tags"><span>System Architecture</span><span>Requirements</span><span>Data Exchange</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/descriptor-arm-spec/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/descriptor-arm-spec" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
