@@ -3,8 +3,8 @@ services:
     name: kate-mo-enterprise-portfolio
     runtime: docker
     rootDir: spring-app
-    dockerfilePath: ./Dockerfile
-    dockerContext: .
+    dockerfilePath: ./spring-app/Dockerfile
+    dockerContext: ./spring-app
     plan: free
     healthCheckPath: /actuator/health
-    autoDeploy: false
+    autoDeployTrigger: off
