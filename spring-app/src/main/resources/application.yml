@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: kate-mo-enterprise-portfolio
+  thymeleaf:
+    cache: ${THYMELEAF_CACHE:true}
+  web:
+    resources:
+      cache:
+        cachecontrol:
+          max-age: 7d
+          cache-public: true
+
+server:
+  port: ${PORT:8080}
+  forward-headers-strategy: framework
+  error:
+    whitelabel:
+      enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+logging:
+  level:
+    root: INFO
