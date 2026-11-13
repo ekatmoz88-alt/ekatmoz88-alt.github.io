@@ -26,6 +26,8 @@
       <div><dt>JDBC connection</dt><dd><code>Global_11r21</code></dd></div>
       <div><dt>Dimensions</dt><dd>Time · Customers · Shipto_Country · Product_VB</dd></div>
       <div><dt>Default operator</dt><dd><code>SUM</code> on all four dimensions</dd></div>
+      <div><dt>IsSparse</dt><dd>Not selected in the extracted dimension properties</dd></div>
+      <div><dt>Precalculation</dt><dd><code>AGGREGATE CUBE_1111</code> is listed in the supplied implementation checklist</dd></div>
     </dl>
   </section>
 
@@ -58,7 +60,7 @@
       <tr><td><code>Shipped_month</code></td><td>Shipment date context</td><td>Month · Calendar Quarter · Fiscal_Quarter</td></tr>
       <tr><td><code>Delivery_month</code></td><td>Delivery date context</td><td>Month · Calendar Quarter · Fiscal_Quarter</td></tr>
     </tbody></table></div>
-    <p class="note">Level keys: K MONTH ID, K CALENDAR QUARTER ID and K FISCAL QUARTER ID. Descriptions: MONTH DSC, CALENDAR QUARTER DSC and FISCAL QUARTER DSC.</p>
+    <p class="note">Level keys: K MONTH ID, K CALENDAR QUARTER ID and K FISCAL QUARTER ID. Descriptions: MONTH DSC, CALENDAR QUARTER DSC and FISCAL QUARTER DSC. The supplied checklist also records rollup, span and end attributes in the DDL.</p>
   </section>
 
   <section class="detail-panel">
@@ -69,13 +71,27 @@
     <div class="hierarchy-flow secondary">
       <span>WAREHOUS / WAREHOUSE</span><b>RollupLink_37</b><span>SHIP_TO</span>
     </div>
-    <p class="note">Summary levels marked active: CUSTOMER_DIM.SHIP_TO, ACCOUNT.City_lev_def and CUSTOMER_DIM.WAREHOUSE. Account_det, State_Province, Country, Region and Total were not selected in the extracted summary-level settings.</p>
+    <p class="note">Summary levels marked active: CUSTOMER_DIM.SHIP_TO, ACCOUNT.City_lev_def and CUSTOMER_DIM.WAREHOUSE. Account_det, State_Province, Country, Region and Total were not selected in the extracted summary-level settings. The supplied checklist records that summary-level definitions were not included in the AW DDL and are ignored by that script.</p>
+    <p class="note">Value-based hierarchy keys use Level Key + Parent Key. The extraction also records a ragged / skip-level hierarchy setting in the AW model.</p>
+    <h3 class="subheading">Calculated customer attribute</h3>
+    <pre class="code-panel"><code>CASE
+  WHEN cust_account.address2 = 'NULL'
+  THEN global.cust_account.address
+  ELSE global.cust_account.address || ', ' || cust_account.address2
+END</code></pre>
+    <p class="note">The extracted expression builds FULL_ADDRESS from the primary and secondary address fields. The literal comparison with 'NULL' is preserved from the supplied extraction and should be checked against actual source data semantics.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">04B / PRODUCT DIMENSION</p><h2>Product_VB</h2>
+    <p>Extracted hierarchy: <code>PRODUCT CHILD → PRODUCT PARENT</code>.</p>
+    <p class="note">Attributes: PARENT ID, BUYER, MARKETING MANAGER and PACKAGER. Fact relationship: <code>R ITEM ID → Product_VB</code>.</p>
   </section>
 
   <section class="detail-panel">
     <p class="eyebrow">05 / MEASURES</p><h2>Measure definitions</h2>
     <div class="table-scroll"><table><thead><tr><th>Measure</th><th>Type</th><th>Extracted definition</th><th>Aggregation</th></tr></thead><tbody>
-      <tr><td><code>MSR_1</code></td><td>Base</td><td><code>UNITS FACT.UNITS</code></td><td>SUM</td></tr>
+      <tr><td><code>MSR_1</code></td><td>Base</td><td><code>A MSR_1 SUM</code> · <code>UNITS_FACT.UNITS</code></td><td>SUM</td></tr>
       <tr><td><code>MSR_2</code></td><td>Formula</td><td><code>FX MSR_2 SUM CUBE_1111.MSR</code></td><td>SUM</td></tr>
       <tr><td><code>CALC_MSR1</code></td><td>Formula / Rank</td><td><code>RANKOVER(H)</code></td><td>SUM metadata property</td></tr>
     </tbody></table></div>
@@ -97,11 +113,30 @@
       <li><code>Export metadata to file only</code> (XML)</li>
       <li>JDBC: <code>Global_11r21</code></li>
     </ul>
-    <p class="note">The extracted UI options document the available export configuration. They do not prove that an AW was successfully created or that XML export completed.</p>
+    <p class="note">Available model views: Dimensional Model (Multidimensional), Relational Model and Oracle Model. The extracted UI options document the available export configuration. They do not prove that an AW was successfully created or that XML export completed.</p>
   </section>
 
   <section class="detail-panel">
-    <p class="eyebrow">07 / VALIDATION BOUNDARIES</p><h2>What remains unverified</h2>
+    <p class="eyebrow">07 / EXTRACTION CHECKLIST</p><h2>Documented implementation points</h2>
+    <div class="table-scroll"><table><thead><tr><th>Item</th><th>Evidence recorded in the supplied checklist</th></tr></thead><tbody>
+      <tr><td>I.1</td><td>Three role-playing time columns: MONTH_ID, SHIP_MONTH_ID, DELIVERY_MONTH_ID</td></tr>
+      <tr><td>I.2</td><td>cust_account join combines dimension and account data</td></tr>
+      <tr><td>II.4</td><td>Time dimension rollup, span and end attributes are present in DDL</td></tr>
+      <tr><td>II.8</td><td>Value-based hierarchy uses Level Key and Parent Key</td></tr>
+      <tr><td>II.9</td><td>Ragged / skip-level hierarchy setting in AW</td></tr>
+      <tr><td>II.10</td><td>Three time roles and R_SHIP_TO_ID dimension usage</td></tr>
+      <tr><td>II.11</td><td>Cube pre-computation: AGGREGATE CUBE_1111</td></tr>
+      <tr><td>II.12a</td><td>MSR_1 maps to UNITS_FACT.UNITS</td></tr>
+      <tr><td>II.12b</td><td>Summary levels are not included in AW DDL</td></tr>
+      <tr><td>II.12c</td><td>Calculated measures MSR_2 and CALC_MSR1 (RANK)</td></tr>
+      <tr><td>II.13</td><td>Calculated level attribute FULL_ADDRESS (IF / CASE)</td></tr>
+      <tr><td>II.14</td><td>Oracle AW export configuration: Recreate AW, JDBC Global_11r21</td></tr>
+    </tbody></table></div>
+    <p class="note">Checklist statuses reflect the supplied documentation evidence. They are not a substitute for executing the DDL or verifying Oracle runtime objects.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">08 / VALIDATION BOUNDARIES</p><h2>What remains unverified</h2>
     <ul class="spec-list">
       <li>Physical SQL join predicates and full key definitions.</li>
       <li>Whether <code>PRICE FACT</code> participates in the active cube configuration.</li>
