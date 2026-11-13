@@ -22,8 +22,8 @@ Technical documentation for the separate passport-accounting information system,
 - [Published documentation](https://ekatmoz88-alt.github.io/territory-docs/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/territory-docs)
 
-### 4. ARM Descriptor — Document Processing Workstation
-Independent workstation architecture and requirements documentation covering stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels.
+### 4. Deshifrator — Workstation Architecture and Requirements
+Complementary architecture and requirements documentation for the same Deshifrator desktop application described in project 2. Covers the stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels. Descriptor is an earlier title in the historical materials, not a separate product.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/descriptor-arm-spec/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/descriptor-arm-spec)
@@ -61,7 +61,7 @@ An anonymized enterprise SOAP documentation case covering service operations, WS
 - [Published documentation](https://ekatmoz88-alt.github.io/umms-docs/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/umms-docs)
 
-### 10. Fintech Documentation Demo
+### 10. Fintech Operations Documentation
 An anonymized real crypto-onramp operator-console project covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/fintech-docs-demo/)
