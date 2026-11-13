@@ -111,7 +111,7 @@
     <div class="project-grid" th:if="${!projects.isEmpty()}">
       <article class="project-card" th:each="project : ${projects}">
         <div class="card-topline">
-          <span class="project-id" th:text="'SYS-' + ${projectStat.count.toString().padStart(2, '0')}">SYS-01</span>
+          <span class="project-id" th:text="'SYS-' + ${projectStat.count}">SYS-01</span>
           <span class="domain-label" th:text="${project.domainLabel()}">API &amp; Integrations</span>
         </div>
         <h3><a th:href="@{/projects/{id}(id=${project.id()})}" th:text="${project.name()}">Project name</a></h3>
