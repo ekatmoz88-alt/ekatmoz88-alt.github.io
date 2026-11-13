@@ -299,8 +299,8 @@ export default function App() {
             </article>
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">FINTECH · WORKFLOWS &amp; SECURITY</span><span className="project-number">10</span></div>
-              <h3>Fintech Documentation Demo</h3>
-              <p>Fictional crypto-onramp operator-console case study covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.</p>
+              <h3>Fintech Operations Documentation</h3>
+              <p>Anonymized real crypto-onramp operator-console project covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.</p>
               <div className="project-tags"><span>Operational Workflows</span><span>Data Classification</span><span>Audit Logging</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/fintech-docs-demo/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
