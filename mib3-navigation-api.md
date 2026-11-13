@@ -1,8 +1,8 @@
 # MIB3 Connected Navigation System: API Data Schema & Sequence Specification
 
-> **Portfolio scope:** This is a documentation-model case study, not an official or source-verified specification of a production vehicle platform. It demonstrates how service boundaries, resource constraints, and sequence flows can be documented. It does not claim authorship of the underlying software or access to proprietary implementation details.
+> **Project context:** This document describes the real MIB3 connected-navigation project using the available project and interface materials. The public portfolio version is a technical documentation artifact; proprietary source code, credentials, and restricted implementation details are not disclosed.
 
-This technical documentation module contains architectural specifications, CRUD matrices, and cross-domain interaction models for the RESTful/WebSocket Service Interface (RSI/ViWi) running on the automotive MIB3 infotainment platform.
+This technical documentation module covers the architecture, API data structures, CRUD behavior, and cross-domain interactions of the RESTful/WebSocket Service Interface (RSI/ViWi) in the automotive MIB3 infotainment platform.
 
 ---
 
