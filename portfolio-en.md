@@ -1,6 +1,6 @@
 # Selected Portfolio — Technical Writer
 
-Public documentation for real software, data-platform, API, and engineering projects. Public pages are anonymized where required; technical evidence is distinguished from interpretation, and historical deployment context is retained.
+Public documentation for real software, data-platform, API, and engineering projects. The system projects were deployed in their respective server environments. Public pages are anonymized where required; technical evidence is distinguished from interpretation, and historical deployment context is retained.
 
 ## Selected projects
 
