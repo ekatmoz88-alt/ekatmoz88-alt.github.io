@@ -26,3 +26,13 @@ The website presents selected technical-writing work and links to independent re
 ## Tags
 
 `portfolio-hub` · `technical-writing` · `developer-documentation` · `api-documentation` · `github-pages` · `en-ru`
+
+## Java 21 server-rendered portfolio
+
+A standalone Spring Boot + Thymeleaf application is being developed in `spring-app/`. It includes the C4-style portfolio landing page, curated project catalogue, project detail routes and the Global11_demo / Cube_1111 case study.
+
+- Stack: Java 21, Spring Boot 4.1.2, Spring MVC, Thymeleaf, Maven.
+- Local run: `cd spring-app && mvn spring-boot:run`.
+- Tests/build: `cd spring-app && mvn clean verify`.
+- Server deployment blueprint: `render.yaml` (Docker-based Render web service).
+- The current GitHub Pages/Vite site is kept independent until the Java application is validated and a production cutover is approved.
