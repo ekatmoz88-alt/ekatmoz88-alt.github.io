@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <th:block th:replace="~{fragments/head :: head('Enterprise Technical Documentation')}"></th:block>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-mark">KM</span>
+    <span>KATE MO <small>ENGINEERING PORTFOLIO</small></span>
+  </a>
+  <nav class="top-links" aria-label="External profiles">
+    <a href="https://github.com/ekatmoz88-alt" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/kate-motsar-b56974267/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+  </nav>
+</header>
+
+<main class="page-shell">
+  <section class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">SYSTEM CONTEXT / 00 — PROFILE</p>
+      <h1>Technical documentation<br><span>for complex systems.</span></h1>
+      <p class="role-line">Senior Technical Writer <span>·</span> API, System Architecture &amp; Docs-as-Code</p>
+      <p class="intro">I document software systems across API contracts, enterprise architecture, data models and engineering specifications. The portfolio links each case to its source repository and supporting technical artefacts.</p>
+      <div class="stack-line">
+        <span>OPENAPI 3.1</span><span>SOAP / WSDL</span><span>C4 / MERMAID</span><span>GIT / CI-CD</span><span>ESKD / GOST</span><span>C# / AUTOLISP</span><span>ORACLE SQL / OLAP</span>
+      </div>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#projects">Explore project systems <span>↓</span></a>
+        <a class="button button-secondary" href="https://github.com/ekatmoz88-alt?tab=repositories" target="_blank" rel="noopener noreferrer">Repository index ↗</a>
+      </div>
+    </div>
+    <aside class="profile-index">
+      <p class="eyebrow">SYSTEM OWNER</p>
+      <div class="profile-id">KM / 01</div>
+      <dl>
+        <div><dt>ROLE</dt><dd>Senior Technical Writer</dd></div>
+        <div><dt>FOCUS</dt><dd>Enterprise / API / Data</dd></div>
+        <div><dt>MODE</dt><dd>Architecture &amp; source analysis</dd></div>
+        <div><dt>DELIVERABLES</dt><dd>Specifications / Portals / CI</dd></div>
+      </dl>
+      <a class="text-link" href="https://www.linkedin.com/in/kate-motsar-b56974267/" target="_blank" rel="noopener noreferrer">Professional profile ↗</a>
+    </aside>
+  </section>
+
+  <section class="context-section" aria-labelledby="context-title">
+    <div class="section-heading">
+      <div><p class="eyebrow">C4 MODEL / LEVEL 1</p><h2 id="context-title">System context</h2></div>
+      <span class="section-note">DOCUMENTATION DELIVERY BOUNDARY</span>
+    </div>
+    <div class="diagram-frame">
+      <svg class="context-diagram" viewBox="0 0 1080 250" role="img" aria-labelledby="c4-title c4-desc">
+        <title id="c4-title">C4 system context for the technical documentation workflow</title>
+        <desc id="c4-desc">Engineering and development teams provide source information to the Senior Technical Writer and Docs-as-Code pipeline, which produces API specifications, system architecture and hardware documentation.</desc>
+        <defs>
+          <marker id="c4-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L8 3 L0 6" fill="none" stroke="#438dd5" stroke-width="1.5"/></marker>
+        </defs>
+        <g class="diagram-node">
+          <rect x="18" y="55" width="270" height="130" rx="4"/>
+          <text x="42" y="84" class="node-type">[EXTERNAL PERSON]</text>
+          <text x="42" y="119" class="node-title">Engineering &amp;</text>
+          <text x="42" y="145" class="node-title">Development Teams</text>
+          <text x="42" y="166" class="node-meta">Source code · Schemas · Requirements</text>
+        </g>
+        <path class="diagram-link" d="M288 120 H402" marker-end="url(#c4-arrow)"/>
+        <text x="345" y="105" text-anchor="middle" class="link-label">SOURCE INPUT</text>
+        <g class="diagram-node node-primary">
+          <rect x="408" y="35" width="290" height="170" rx="4"/>
+          <text x="432" y="65" class="node-type">[PERSON / PROCESS]</text>
+          <text x="432" y="105" class="node-title">Senior Technical Writer</text>
+          <text x="432" y="132" class="node-subtitle">Docs-as-Code Pipeline</text>
+          <text x="432" y="165" class="node-meta">Analyse · Model · Specify · Validate</text>
+          <text x="432" y="186" class="node-meta">Git · CI/CD · Linters · Review</text>
+        </g>
+        <path class="diagram-link" d="M698 120 H812" marker-end="url(#c4-arrow)"/>
+        <text x="755" y="105" text-anchor="middle" class="link-label">DOCUMENTATION</text>
+        <g class="diagram-node node-output">
+          <rect x="818" y="42" width="244" height="156" rx="4"/>
+          <text x="842" y="70" class="node-type">[OUTPUT SYSTEMS]</text>
+          <text x="842" y="105" class="node-title">API Specifications</text>
+          <text x="842" y="132" class="node-title">System Architecture</text>
+          <text x="842" y="159" class="node-title">Hardware Documents</text>
+          <text x="842" y="181" class="node-meta">Portals · Models · Specs</text>
+        </g>
+      </svg>
+      <div class="diagram-caption"><span>FIG 01</span><span>Logical relationship view · Not a deployment topology</span></div>
+    </div>
+  </section>
+
+  <section class="projects-section" id="projects">
+    <div class="section-heading">
+      <div><p class="eyebrow">PORTFOLIO / C4 CONTAINERS</p><h2>Project systems</h2></div>
+      <span class="count-badge"><strong th:text="${visibleCount}">14</strong> / <span th:text="${totalProjects}">14</span> PROJECTS</span>
+    </div>
+
+    <div class="filter-bar">
+      <a th:class="${activeDomain == '' ? 'filter-chip active' : 'filter-chip'}" href="/">All Systems</a>
+      <a th:each="domain : ${domains}"
+         th:class="${activeDomain == domain.slug() ? 'filter-chip active' : 'filter-chip'}"
+         th:href="@{/(domain=${domain.slug()})}"
+         th:text="${domain.label()}">API &amp; Integrations</a>
+    </div>
+    <form class="search-form" method="get" action="/">
+      <input type="hidden" name="domain" th:value="${activeDomain}">
+      <label class="sr-only" for="project-search">Search projects</label>
+      <input id="project-search" type="search" name="q" th:value="${query}" placeholder="Search by project, technology or standard…">
+      <button type="submit">SEARCH ↵</button>
+      <a th:if="${!query.isBlank()}" th:href="@{/(domain=${activeDomain})}">Clear</a>
+    </form>
+
+    <div class="project-grid" th:if="${!projects.isEmpty()}">
+      <article class="project-card" th:each="project : ${projects}">
+        <div class="card-topline">
+          <span class="project-id" th:text="'SYS-' + ${projectStat.count.toString().padStart(2, '0')}">SYS-01</span>
+          <span class="domain-label" th:text="${project.domainLabel()}">API &amp; Integrations</span>
+        </div>
+        <h3><a th:href="@{/projects/{id}(id=${project.id()})}" th:text="${project.name()}">Project name</a></h3>
+        <p class="container-label" th:text="'[Container: ' + ${project.container()} + ']'">[Container: OpenAPI]</p>
+        <p class="project-description" th:text="${project.description()}">Description</p>
+        <div class="tag-list"><span th:each="tag : ${project.tags()}" th:text="${tag}">TAG</span></div>
+        <div class="card-footer">
+          <a th:href="${project.repository()}" target="_blank" rel="noopener noreferrer">SOURCE REPOSITORY ↗</a>
+          <a th:href="@{/projects/{id}(id=${project.id()})}">CASE DETAILS →</a>
+        </div>
+      </article>
+    </div>
+    <div class="empty-state" th:if="${projects.isEmpty()}">
+      <p class="eyebrow">NO MATCHING SYSTEMS</p>
+      <h3>No projects match this query.</h3>
+      <a href="/">Reset filters →</a>
+    </div>
+  </section>
+
+  <section class="capabilities-section">
+    <div class="section-heading"><div><p class="eyebrow">ENGINEERING PRACTICE</p><h2>Documentation domains</h2></div></div>
+    <div class="capability-grid">
+      <div><span>01 / CONTRACTS</span><h3>API &amp; Integrations</h3><p>OpenAPI, REST, SOAP/WSDL, webhooks, authentication and error models.</p></div>
+      <div><span>02 / SYSTEMS</span><h3>Enterprise Architecture</h3><p>System boundaries, module maps, database models, integration and operational flows.</p></div>
+      <div><span>03 / ENGINEERING</span><h3>Hardware Specifications</h3><p>Interfaces, memory maps, DSP, ESKD and standards-based technical specifications.</p></div>
+      <div><span>04 / TOOLCHAIN</span><h3>Docs-as-Code</h3><p>Git, Markdown, CI/CD, linters, automated checks and reproducible publishing.</p></div>
+    </div>
+  </section>
+</main>
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>
