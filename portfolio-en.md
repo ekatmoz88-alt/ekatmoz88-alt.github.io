@@ -1,11 +1,11 @@
 # Selected Portfolio — Technical Writer
 
-Public documentation samples and anonymized technical case studies. Each project page describes its scope and distinguishes documented evidence from assumptions. Portfolio demos do not represent live production services unless explicitly stated.
+Public documentation for real software, data-platform, API, and engineering projects. Public pages are anonymized where required; technical evidence is distinguished from interpretation, and historical deployment context is retained.
 
 ## Selected projects
 
 ### 1. API Documentation Portfolio V2
-A documentation-as-code demonstration built around a deployed demo Orders REST API. Includes an OpenAPI 3.1 contract, schemas, request/response examples, error responses, an interactive Redoc reference, and automated checks with Spectral and Redocly in GitHub Actions.
+Docs-as-Code documentation for a deployed Orders REST API. Includes an OpenAPI 3.1 contract, schemas, request/response examples, error responses, an interactive Redoc reference, and automated checks with Spectral and Redocly in GitHub Actions.
 
 - [Published API reference](https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/openapi/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/api-docs-portfolio-v2)
@@ -62,7 +62,7 @@ An anonymized enterprise SOAP documentation case covering service operations, WS
 - [GitHub repository](https://github.com/ekatmoz88-alt/umms-docs)
 
 ### 10. Fintech Documentation Demo
-A fictional crypto-onramp operator-console case study covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.
+An anonymized real crypto-onramp operator-console project covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.
 
 - [Published documentation](https://ekatmoz88-alt.github.io/fintech-docs-demo/)
 - [GitHub repository](https://github.com/ekatmoz88-alt/fintech-docs-demo)
