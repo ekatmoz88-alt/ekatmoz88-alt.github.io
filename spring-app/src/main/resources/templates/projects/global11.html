@@ -46,7 +46,7 @@
       <div class="olap-dimensions">
         <div><span>DIMENSION</span><strong>Time</strong><small>Order · Shipped · Delivery</small></div>
         <div><span>DIMENSION</span><strong>Customers</strong><small>Account · City · State · Country · Warehouse · Ship-to</small></div>
-        <div><span>DIMENSION</span><strong>Shipto_Country</strong><small>Delivery country</small></div>
+        <div><span>DIMENSION</span><strong>Shipto_Country</strong><small>Role mapped from R SHIP TO ID</small></div>
         <div><span>DIMENSION</span><strong>Product_VB</strong><small>Product child → parent</small></div>
       </div>
     </div>
@@ -66,12 +66,15 @@
   <section class="detail-panel">
     <p class="eyebrow">04 / CUSTOMER HIERARCHY</p><h2>Customers</h2>
     <div class="hierarchy-flow">
-      <span>Account_det</span><b>→</b><span>City_lev_def</span><b>→</b><span>State_Province</span><b>→</b><span>Country</span>
+      <span>Account_det</span>
+      <span>City_lev_def</span>
+      <span>State_Province</span>
+      <span>Country</span>
     </div>
     <div class="hierarchy-flow secondary">
       <span>WAREHOUS / WAREHOUSE</span><b>RollupLink_37</b><span>SHIP_TO</span>
     </div>
-    <p class="note">Summary levels marked active: CUSTOMER_DIM.SHIP_TO, ACCOUNT.City_lev_def and CUSTOMER_DIM.WAREHOUSE. Account_det, State_Province, Country, Region and Total were not selected in the extracted summary-level settings. The supplied checklist records that summary-level definitions were not included in the AW DDL and are ignored by that script.</p>
+    <p class="note">Extracted customer levels are listed without implying a parent-child sequence: Account_det, City_lev_def, State_Province, Country, WAREHOUS / WAREHOUSE and SHIP_TO. Summary levels marked active: CUSTOMER_DIM.SHIP_TO, ACCOUNT.City_lev_def and CUSTOMER_DIM.WAREHOUSE. Account_det, State_Province, Country, Region and Total were not selected in the extracted summary-level settings. The supplied checklist records that summary-level definitions were not included in the AW DDL and are ignored by that script. Parent-child relationships among the first four levels are not confirmed by the available extraction.</p>
     <p class="note">Value-based hierarchy keys use Level Key + Parent Key. The extraction also records a ragged / skip-level hierarchy setting in the AW model.</p>
     <h3 class="subheading">Calculated customer attribute</h3>
     <pre class="code-panel"><code>CASE
