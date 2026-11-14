@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head('Global11 / Cube_1111')}"></head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">KM</span><span>KATE MO <small>ENGINEERING PORTFOLIO</small></span></a>
+  <a class="back-link" href="/">← ALL SYSTEMS</a>
+</header>
+<main class="detail-shell wide">
+  <p class="eyebrow">CASE STUDY / DATA ARCHITECTURE / ORACLE OLAP</p>
+  <h1>Global11 Demo Data Platform</h1>
+  <p class="container-label large">[Container: Oracle / SQLite / Data Dictionary / Oracle Analytic Workspace]</p>
+  <p class="detail-description">Metadata-level documentation of the Global11_demo multidimensional model, consolidated around the Cube_1111 Oracle OLAP cube. The case distinguishes extracted metadata from implementation and runtime evidence.</p>
+
+  <div class="status-strip">
+    <div><span class="eyebrow">DOCUMENTATION STATUS</span><strong>COMPLETE</strong></div>
+    <div><span class="eyebrow">TECHNICAL VALIDATION</span><strong class="status-pending">PENDING</strong></div>
+  </div>
+
+  <section class="detail-panel">
+    <p class="eyebrow">01 / CUBE OVERVIEW</p><h2>Cube_1111</h2>
+    <dl class="metadata-list">
+      <div><dt>Model</dt><dd>Dimensional Model — Multidimensional</dd></div>
+      <div><dt>Primary fact</dt><dd><code>UNITS FACT</code></dd></div>
+      <div><dt>Additional raw-log mention</dt><dd><code>PRICE FACT</code> — active participation not confirmed</dd></div>
+      <div><dt>JDBC connection</dt><dd><code>Global_11r21</code></dd></div>
+      <div><dt>Dimensions</dt><dd>Time · Customers · Shipto_Country · Product_VB</dd></div>
+      <div><dt>Default operator</dt><dd><code>SUM</code> on all four dimensions</dd></div>
+      <div><dt>IsSparse</dt><dd>Not selected in the extracted dimension properties</dd></div>
+      <div><dt>Precalculation</dt><dd><code>AGGREGATE CUBE_1111</code> is listed in the supplied implementation checklist</dd></div>
+    </dl>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">02 / LOGICAL MODEL</p><h2>Fact and dimension relationships</h2>
+    <div class="table-scroll"><table><thead><tr><th>Fact attribute</th><th>Dimension / role</th></tr></thead><tbody>
+      <tr><td><code>R SHIP MONTH ID</code></td><td>Shipped_month</td></tr>
+      <tr><td><code>R MONTH ID</code></td><td>Order_Month</td></tr>
+      <tr><td><code>R DELIVERY MONTH ID</code></td><td>Delivery_month</td></tr>
+      <tr><td><code>R SHIP TO ID</code></td><td>Customers</td></tr>
+      <tr><td><code>R SHIP TO ID</code></td><td>Shipto_Country</td></tr>
+      <tr><td><code>R ITEM ID</code></td><td>Product_VB</td></tr>
+    </tbody></table></div>
+    <div class="olap-map">
+      <div class="olap-fact"><span>FACT</span><strong>UNITS FACT</strong></div>
+      <div class="olap-dimensions">
+        <div><span>DIMENSION</span><strong>Time</strong><small>Order · Shipped · Delivery</small></div>
+        <div><span>DIMENSION</span><strong>Customers</strong><small>Account · City · State · Country · Warehouse · Ship-to</small></div>
+        <div><span>DIMENSION</span><strong>Shipto_Country</strong><small>Role mapped from R SHIP TO ID</small></div>
+        <div><span>DIMENSION</span><strong>Product_VB</strong><small>Product child → parent</small></div>
+      </div>
+    </div>
+    <p class="note">Logical relationship summary from extracted metadata. Physical SQL join predicates were not reconstructed.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">03 / TIME DIMENSION</p><h2>Role-playing time</h2>
+    <div class="table-scroll"><table><thead><tr><th>Role</th><th>Meaning</th><th>Levels</th></tr></thead><tbody>
+      <tr><td><code>Order_Month</code></td><td>Order date context</td><td>Month · Calendar Quarter · Fiscal_Quarter</td></tr>
+      <tr><td><code>Shipped_month</code></td><td>Shipment date context</td><td>Month · Calendar Quarter · Fiscal_Quarter</td></tr>
+      <tr><td><code>Delivery_month</code></td><td>Delivery date context</td><td>Month · Calendar Quarter · Fiscal_Quarter</td></tr>
+    </tbody></table></div>
+    <p class="note">Level keys: K MONTH ID, K CALENDAR QUARTER ID and K FISCAL QUARTER ID. Descriptions: MONTH DSC, CALENDAR QUARTER DSC and FISCAL QUARTER DSC. The supplied checklist also records rollup, span and end attributes in the DDL.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">04 / CUSTOMER HIERARCHY</p><h2>Customers</h2>
+    <div class="hierarchy-flow">
+      <span>Account_det</span>
+      <span>City_lev_def</span>
+      <span>State_Province</span>
+      <span>Country</span>
+    </div>
+    <div class="hierarchy-flow secondary">
+      <span>WAREHOUS / WAREHOUSE</span><b>RollupLink_37</b><span>SHIP_TO</span>
+    </div>
+    <p class="note">Extracted customer levels are listed without implying a parent-child sequence: Account_det, City_lev_def, State_Province, Country, WAREHOUS / WAREHOUSE and SHIP_TO. Summary levels marked active: CUSTOMER_DIM.SHIP_TO, ACCOUNT.City_lev_def and CUSTOMER_DIM.WAREHOUSE. Account_det, State_Province, Country, Region and Total were not selected in the extracted summary-level settings. The supplied checklist records that summary-level definitions were not included in the AW DDL and are ignored by that script. Parent-child relationships among the first four levels are not confirmed by the available extraction.</p>
+    <p class="note">Value-based hierarchy keys use Level Key + Parent Key. The extraction also records a ragged / skip-level hierarchy setting in the AW model.</p>
+    <h3 class="subheading">Calculated customer attribute</h3>
+    <pre class="code-panel"><code>CASE
+  WHEN cust_account.address2 = 'NULL'
+  THEN global.cust_account.address
+  ELSE global.cust_account.address || ', ' || cust_account.address2
+END</code></pre>
+    <p class="note">The extracted expression builds FULL_ADDRESS from the primary and secondary address fields. The literal comparison with 'NULL' is preserved from the supplied extraction and should be checked against actual source data semantics.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">04B / PRODUCT DIMENSION</p><h2>Product_VB</h2>
+    <p>Extracted hierarchy: <code>PRODUCT CHILD → PRODUCT PARENT</code>.</p>
+    <p class="note">Attributes: PARENT ID, BUYER, MARKETING MANAGER and PACKAGER. Fact relationship: <code>R ITEM ID → Product_VB</code>.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">05 / MEASURES</p><h2>Measure definitions</h2>
+    <div class="table-scroll"><table><thead><tr><th>Measure</th><th>Type</th><th>Extracted definition</th><th>Aggregation</th></tr></thead><tbody>
+      <tr><td><code>MSR_1</code></td><td>Base</td><td><code>A MSR_1 SUM</code> · <code>UNITS_FACT.UNITS</code></td><td>SUM</td></tr>
+      <tr><td><code>MSR_2</code></td><td>Formula</td><td><code>FX MSR_2 SUM CUBE_1111.MSR</code></td><td>SUM</td></tr>
+      <tr><td><code>CALC_MSR1</code></td><td>Formula / Rank</td><td><code>RANKOVER(H)</code></td><td>SUM metadata property</td></tr>
+    </tbody></table></div>
+    <h3 class="subheading">CALC_MSR1 — extracted formula</h3>
+    <pre class="code-panel"><code>RANK() OVER (
+  HIERARCHY CUSTOMERS.SHIP_TO_COUNTRY_HIER
+  ORDER BY CUBE_1111.MSR_1 DESC NULLS LAST
+  WITHIN LEVEL
+)</code></pre>
+    <p class="note">The metadata marks measures as Fully-Additive. This flag does not independently establish that ranking results can be meaningfully re-summed across hierarchy levels.</p>
+    <p class="note">The complete MSR_2 formula was not present in the supplied extraction. The short expression is retained without inventing missing formula details.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">06 / EXPORT CONFIGURATION</p><h2>Oracle Analytic Workspace</h2>
+    <ul class="spec-list">
+      <li><code>Recreate AW</code></li>
+      <li><code>Populate Created Cubes</code></li>
+      <li><code>Export metadata to file only</code> (XML)</li>
+      <li>JDBC: <code>Global_11r21</code></li>
+    </ul>
+    <p class="note">Available model views: Dimensional Model (Multidimensional), Relational Model and Oracle Model. The extracted UI options document the available export configuration. They do not prove that an AW was successfully created or that XML export completed.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">07 / EXTRACTION CHECKLIST</p><h2>Documented implementation points</h2>
+    <div class="table-scroll"><table><thead><tr><th>Item</th><th>Evidence recorded in the supplied checklist</th></tr></thead><tbody>
+      <tr><td>I.1</td><td>Three role-playing time columns: MONTH_ID, SHIP_MONTH_ID, DELIVERY_MONTH_ID</td></tr>
+      <tr><td>I.2</td><td>cust_account join combines dimension and account data</td></tr>
+      <tr><td>II.4</td><td>Time dimension rollup, span and end attributes are present in DDL</td></tr>
+      <tr><td>II.8</td><td>Value-based hierarchy uses Level Key and Parent Key</td></tr>
+      <tr><td>II.9</td><td>Ragged / skip-level hierarchy setting in AW</td></tr>
+      <tr><td>II.10</td><td>Three time roles and R_SHIP_TO_ID dimension usage</td></tr>
+      <tr><td>II.11</td><td>Cube pre-computation: AGGREGATE CUBE_1111</td></tr>
+      <tr><td>II.12a</td><td>MSR_1 maps to UNITS_FACT.UNITS</td></tr>
+      <tr><td>II.12b</td><td>Summary levels are not included in AW DDL</td></tr>
+      <tr><td>II.12c</td><td>Calculated measures MSR_2 and CALC_MSR1 (RANK)</td></tr>
+      <tr><td>II.13</td><td>Calculated level attribute FULL_ADDRESS (IF / CASE)</td></tr>
+      <tr><td>II.14</td><td>Oracle AW export configuration: Recreate AW, JDBC Global_11r21</td></tr>
+    </tbody></table></div>
+    <p class="note">Checklist statuses reflect the supplied documentation evidence. They are not a substitute for executing the DDL or verifying Oracle runtime objects.</p>
+  </section>
+
+  <section class="detail-panel">
+    <p class="eyebrow">08 / VALIDATION BOUNDARIES</p><h2>What remains unverified</h2>
+    <ul class="spec-list">
+      <li>Physical SQL join predicates and full key definitions.</li>
+      <li>Whether <code>PRICE FACT</code> participates in the active cube configuration.</li>
+      <li>The complete <code>MSR_2</code> formula.</li>
+      <li>Successful creation or refresh of Oracle AW.</li>
+      <li>Actual XML metadata export execution.</li>
+      <li>Runtime correctness of aggregation and ranking on real data.</li>
+    </ul>
+    <p class="closing-statement">Conclusion: Cube_1111 metadata has been consolidated into a single specification. This describes the model at the level of extracted Oracle OLAP metadata and does not replace physical DDL/DML specifications or Oracle runtime validation.</p>
+  </section>
+
+  <div class="detail-actions">
+    <a class="button button-primary" href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noopener noreferrer">Open project repository ↗</a>
+    <a class="button button-secondary" href="/">Return to portfolio</a>
+  </div>
+</main>
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>

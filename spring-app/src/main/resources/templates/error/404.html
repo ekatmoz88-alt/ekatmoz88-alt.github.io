@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head('Page not found')}"></head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">KM</span><span>KATE MO <small>ENGINEERING PORTFOLIO</small></span></a>
+</header>
+<main class="detail-shell">
+  <p class="eyebrow">HTTP 404 / RESOURCE NOT FOUND</p>
+  <h1>Page not found.</h1>
+  <p class="detail-description">The requested project or page does not exist in this portfolio catalogue.</p>
+  <a class="button button-primary" href="/">Return to project systems →</a>
+</main>
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>

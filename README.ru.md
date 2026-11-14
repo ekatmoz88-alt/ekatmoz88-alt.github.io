@@ -26,3 +26,13 @@
 ## Теги
 
 `portfolio-hub` · `technical-writing` · `developer-documentation` · `api-documentation` · `github-pages` · `en-ru`
+
+## Серверная версия портфолио на Java 21
+
+В каталоге `spring-app/` разрабатывается отдельное серверное приложение Spring Boot + Thymeleaf. Оно включает главную страницу портфолио в стиле C4, каталог проектов, страницы проектов и подробный кейс Global11_demo / Cube_1111.
+
+- Стек: Java 21, Spring Boot 4.1.2, Spring MVC, Thymeleaf, Maven.
+- Локальный запуск: `cd spring-app && mvn spring-boot:run`.
+- Тесты и сборка: `cd spring-app && mvn clean verify`.
+- Конфигурация серверного размещения: `render.yaml` (Docker-сервис Render).
+- Текущий сайт GitHub Pages/Vite остаётся независимым до проверки Java-приложения и отдельного согласования переключения production-сайта.

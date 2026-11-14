@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head(${project.name()})}"></head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/"><span class="brand-mark">KM</span><span>KATE MO <small>ENGINEERING PORTFOLIO</small></span></a>
+  <a class="back-link" href="/">← ALL SYSTEMS</a>
+</header>
+<main class="detail-shell">
+  <p class="eyebrow" th:text="'PROJECT SYSTEM / ' + ${project.domainLabel()}">PROJECT SYSTEM</p>
+  <h1 th:text="${project.name()}">Project</h1>
+  <p class="container-label large" th:text="'[Container: ' + ${project.container()} + ']'">[Container]</p>
+  <p class="detail-description" th:text="${project.description()}">Description</p>
+  <section class="detail-panel">
+    <h2>Technical metadata</h2>
+    <dl class="metadata-list">
+      <div><dt>Repository</dt><dd><a th:href="${project.repository()}" th:text="${project.id()}" target="_blank" rel="noopener noreferrer">repository</a></dd></div>
+      <div><dt>Domain</dt><dd th:text="${project.domainLabel()}">Domain</dd></div>
+      <div><dt>Container / Standards</dt><dd th:text="${project.container()}">Container</dd></div>
+      <div><dt>Tags</dt><dd><span class="tag-list"><span th:each="tag : ${project.tags()}" th:text="${tag}">TAG</span></span></dd></div>
+      <div th:if="${project.liveDemo() != null}"><dt>Published documentation</dt><dd><a th:href="${project.liveDemo()}" target="_blank" rel="noopener noreferrer">Open live documentation ↗</a></dd></div>
+    </dl>
+  </section>
+  <div class="detail-actions">
+    <a class="button button-primary" th:href="${project.repository()}" target="_blank" rel="noopener noreferrer">Open source repository ↗</a>
+    <a class="button button-secondary" href="/">Return to portfolio</a>
+  </div>
+</main>
+<div th:replace="~{fragments/footer :: footer}"></div>
+</body>
+</html>
