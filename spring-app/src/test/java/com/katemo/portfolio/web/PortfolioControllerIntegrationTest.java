@@ -25,7 +25,7 @@ class PortfolioControllerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Project systems")))
                 .andExpect(content().string(containsString("Global11 Demo Data Platform")))
-                .andExpect(content().string(containsString("14 / 14 PROJECTS")));
+                .andExpect(content().string(containsString("<strong>14</strong> / <span>14</span> PROJECTS")));
     }
 
     @Test
