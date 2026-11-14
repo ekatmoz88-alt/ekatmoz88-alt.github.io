@@ -1,10 +1,10 @@
 services:
   - type: web
-    name: kate-mo-enterprise-portfolio
+    name: ekatmoz88-portfolio
     runtime: docker
-    rootDir: spring-app
-    dockerfilePath: ./Dockerfile
-    dockerContext: .
+    branch: main
+    dockerfilePath: ./spring-app/Dockerfile
+    dockerContext: ./spring-app
     plan: free
     healthCheckPath: /actuator/health
     autoDeployTrigger: checksPass
