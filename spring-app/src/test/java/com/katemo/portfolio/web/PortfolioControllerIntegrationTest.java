@@ -25,7 +25,7 @@ class PortfolioControllerIntegrationTest {
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Project systems")))
                 .andExpect(content().string(containsString("Global11 Demo Data Platform")))
-                .andExpect(content().string(containsString("14 PROJECTS")));
+                .andExpect(content().string(containsString("14 / 14 PROJECTS")));
     }
 
     @Test
@@ -41,7 +41,7 @@ class PortfolioControllerIntegrationTest {
         mockMvc.perform(get("/projects/global11-demo-data-platform"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Cube_1111")))
-                .andExpect(content().string(containsString("Validation Boundaries")));
+                .andExpect(content().string(containsString("What remains unverified")));
     }
 
     @Test
