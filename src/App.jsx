@@ -248,72 +248,41 @@ export default function App() {
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/cobalt-ui-navigation-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/cobalt-ui-navigation-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">PASSPORT ACCOUNT SYSTEM</span><span className="project-number">03</span></div>
-              <h3>Passport Account System Documentation</h3>
-              <p>Technical documentation for a separate passport-accounting information system, including Oracle database models, API endpoints, JSON structures and source-to-model mappings. The available materials describe passport and residence-registration workflows, person and organization records, document quality controls, address references, dictionaries, access roles, audit logs and related data structures. This is the Passport Account System, not the FMS PPO Territory archive or the separate Deshifrator workstation project.</p>
-              <div className="project-tags"><span>Oracle</span><span>Database Documentation</span><span>Data Models</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-docs/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://ekatmoz88-alt.github.io/territory-docs/database/physical-structure-specification" target="_blank" rel="noreferrer">Physical DB structure (2014) ↗</a><a href="https://github.com/ekatmoz88-alt/territory-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
+              <div className="project-card-top"><span className="project-type">UNIFIED ENTERPRISE SYSTEM DOCUMENTATION</span><span className="project-number">03</span></div>
+              <h3>PPO Territory / Deshifrator / UMMS — Documentation Hub</h3>
+              <p>One connected historical project contour covering the PPO Territory information system and passport-accounting database, the Deshifrator document-processing workstation, and UMMS as a related system boundary. The applications and runtime boundaries remain distinct. Documentation includes the Oracle inventory and data models, 401-table grouping, separate 381-entry physical-structure source, logical subject areas, workstation architecture, ModuleMobile / ModuleStationary / PassportPaint review, SQLite, file exchange and SOAP integration.</p>
+              <div className="project-tags"><span>Oracle / Data Models</span><span>System Architecture</span><span>C# / SQLite / SOAP</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/territory-descriptor-unified/" target="_blank" rel="noreferrer">Canonical hub <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/territory-descriptor-unified/blob/main/materials/territory-database/database/index.md" target="_blank" rel="noreferrer">Database inventory ↗</a><a href="https://github.com/ekatmoz88-alt/territory-descriptor-unified/blob/main/materials/territory-database/database/logical-structure-model.md" target="_blank" rel="noreferrer">Logical model ↗</a><a href="https://github.com/ekatmoz88-alt/territory-descriptor-unified/blob/main/materials/territory-database/database/physical-structure-specification.md" target="_blank" rel="noreferrer">Physical structure ↗</a><a href="https://github.com/ekatmoz88-alt/descriptor-arm-spec" target="_blank" rel="noreferrer">Workstation specification ↗</a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs" target="_blank" rel="noreferrer">Software review ↗</a><a href="https://github.com/ekatmoz88-alt/umms-docs" target="_blank" rel="noreferrer">UMMS SOAP docs ↗</a></div>
             </article>
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">ORACLE DATABASE DOCUMENTATION</span><span className="project-number">04</span></div>
               <h3>Global11 — Oracle Database Documentation</h3>
-              <p>Technical documentation for an Oracle Global 11g data platform, covering the relational data model, data dictionary, OLAP patterns, and SQL scripts and scenarios.</p>
+              <p>Technical documentation for an independent Oracle Global 11g data platform, covering the relational data model, data dictionary, OLAP patterns, DMRS metadata and SQL scripts and scenarios.</p>
               <div className="project-tags"><span>Oracle 11g</span><span>Data Modeling</span><span>SQL</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/global11-demo-data-platform/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/global11-demo-data-platform" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">DESKTOP APPLICATION SUITE DOCUMENTATION</span><span className="project-number">05</span></div>
-              <h3>Deshifrator — ModuleMobile, ModuleStationary &amp; PassportPaint</h3>
-              <p>Technical documentation for the complete documented application scope: ModuleMobile search and UMMS SOAP workflows; ModuleStationary import, synchronization and SQLite storage; and Printer / PassportPaint passport-layout editing, MRZ generation and printing. Also covers encrypted file exchange, shared WPF components, FIAS/Elasticsearch and OCR dependencies. The review is based on available descriptions and selected source excerpts; it is not a complete source-code transfer.</p>
-              <div className="project-tags"><span>.NET Framework / WPF</span><span>SOAP / XML / SQLite</span><span>Passport Layouts &amp; MRZ</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/deshifrator-docs/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/application-suite-review.md" target="_blank" rel="noreferrer">Application suite review ↗</a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs/blob/main/docs/repository-completeness.md" target="_blank" rel="noreferrer">Documentation inventory ↗</a><a href="https://github.com/ekatmoz88-alt/deshifrator-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
-            </article>
-
-            <article className="project-card">
-              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">06</span></div>
+              <div className="project-card-top"><span className="project-type">HARDWARE SPECIFICATION</span><span className="project-number">05</span></div>
               <h3>ADP201P4 Hardware Specification</h3>
-              <p>Engineering documentation for a DSP carrier board: processing architecture, memory mapping, FPGA interface, registers and connector pinouts.</p>
+              <p>Engineering documentation for a DSP carrier board in the Cobalt / Oracle freelance project track: processing architecture, memory mapping, FPGA interface, registers and connector pinouts. This is not PPO Territory or Global11 material.</p>
               <div className="project-tags"><span>DSP</span><span>FPGA</span><span>Registers</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/adp201p4-hardware-spec/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/adp201p4-hardware-spec" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">SOAP / ENTERPRISE API</span><span className="project-number">07</span></div>
-              <h3>UMMS SOAP API Documentation</h3>
-              <p>Enterprise SOAP integration and client documentation, with a clear separation between public materials and restricted NDA documentation.</p>
-              <div className="project-tags"><span>SOAP</span><span>WSDL</span><span>Integration</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/umms-docs/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/umms-docs" target="_blank" rel="noreferrer">Source ↗</a></div>
-
-            <article className="project-card">
-              <div className="project-card-top"><span className="project-type">DOCUMENT-PROCESSING WORKSTATION</span><span className="project-number">08</span></div>
-              <h3>Deshifrator — Workstation Specification &amp; Architecture</h3>
-              <p>Complementary workstation architecture and requirements documentation for the same Deshifrator project described in the desktop-application card. Covers stationary and mobile stations, functional subsystems, hardware/software boundaries, data exchange and security trust levels. ARM Descriptor is an earlier historical label, not a separate product.</p>
-              <div className="project-tags"><span>System Architecture</span><span>Requirements</span><span>Data Exchange</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/descriptor-arm-spec/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/descriptor-arm-spec" target="_blank" rel="noreferrer">Source ↗</a></div>
-            </article>
-            <article className="project-card">
-              <div className="project-card-top"><span className="project-type">ENTERPRISE INFORMATION SYSTEM</span><span className="project-number">09</span></div>
-              <h3>FMS Territory — PPO Archive</h3>
-              <p>Technical archive documenting the separate FMS Territory enterprise information system, its functional modules, deployment architecture, external integrations, platform requirements and lifecycle testing.</p>
-              <div className="project-tags"><span>Enterprise Architecture</span><span>Integrations</span><span>System Documentation</span></div>
-              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/ppo-territory-archive/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/ppo-territory-archive" target="_blank" rel="noreferrer">Source ↗</a></div>
-            </article>
-            <article className="project-card">
-              <div className="project-card-top"><span className="project-type">FINTECH · WORKFLOWS &amp; SECURITY</span><span className="project-number">10</span></div>
+              <div className="project-card-top"><span className="project-type">FINTECH · WORKFLOWS &amp; SECURITY</span><span className="project-number">06</span></div>
               <h3>Fintech Operations Documentation</h3>
               <p>Anonymized real crypto-onramp operator-console project covering KYC and onboarding journeys, operator workflows, PII classification, data handling and audit logging.</p>
               <div className="project-tags"><span>Operational Workflows</span><span>Data Classification</span><span>Audit Logging</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/fintech-docs-demo/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/fintech-docs-demo" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
             <article className="project-card">
-              <div className="project-card-top"><span className="project-type">DOCS-AS-CODE · CI QUALITY</span><span className="project-number">11</span></div>
+              <div className="project-card-top"><span className="project-type">DOCS-AS-CODE · CI QUALITY</span><span className="project-number">07</span></div>
               <h3>Technical Writing Workflows</h3>
               <p>Automated documentation-quality pipeline demonstrating OpenAPI validation with Spectral, Markdown linting and link checking with Lychee in GitHub Actions.</p>
               <div className="project-tags"><span>Spectral</span><span>Markdown Linting</span><span>GitHub Actions</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/technical-writing-workflows/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/technical-writing-workflows" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
-            </article>
           </div>
-        </section>
         <footer className="footer">
           <span>Data provided by the GitHub REST API</span>
           <span>Public data · Refresh to update</span>
