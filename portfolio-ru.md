@@ -18,6 +18,12 @@
 - [Анализ программных компонентов «Дешифратора»](https://github.com/ekatmoz88-alt/deshifrator-docs)
 - [Документация SOAP и клиентской части UMMS](https://github.com/ekatmoz88-alt/umms-docs)
 
+### C4 Architecture — Dossier Processing Workstation
+Архитектурная реконструкция клиентского приложения по модели C4: System Context, Container и Component. Модель разделяет мобильный и стационарный модули, локальное SQLite-хранилище и файловый обмен через съёмный носитель. Интеграционные связи и часть компонентных зависимостей помечены как требующие дополнительной проверки.
+
+- [C4 architecture case study](https://ekatmoz88-alt.github.io/c4-architecture/)
+- [Structurizr DSL source](https://ekatmoz88-alt.github.io/c4-architecture/workspace.dsl)
+
 ### 3. Cobalt UI Navigation Documentation
 Документация C++ UI-компонента на основе анализа исходного кода: архитектура, абстракция native-интерфейса, жизненный цикл компонента, управление фокусом, callbacks, очереди обновлений и совместимость.
 
