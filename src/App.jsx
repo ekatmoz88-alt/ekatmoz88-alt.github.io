@@ -231,7 +231,7 @@ export default function App() {
         )}
 
         <section className="panel" style={{marginTop:16}} id="portfolio">
-          <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>7</span></h2></div></div>
+          <div className="panel-heading"><div><p className="eyebrow">SELECTED WORK</p><h2>Portfolio projects <span>8</span></h2></div></div>
           <div className="projects-grid">
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">API DOCUMENTATION</span><span className="project-number">01</span></div>
@@ -239,6 +239,13 @@ export default function App() {
               <p>REST APIs, OpenAPI 3.1, SOAP/WSDL case studies, API references, documentation architecture and automated validation.</p>
               <div className="project-tags"><span>OpenAPI</span><span>REST</span><span>SOAP</span></div>
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/api-docs-portfolio-v2/" target="_blank" rel="noreferrer">Live site <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/api-docs-portfolio-v2" target="_blank" rel="noreferrer">Source ↗</a></div>
+            </article>
+            <article className="project-card">
+              <div className="project-card-top"><span className="project-type">C4 MODEL · SOFTWARE ARCHITECTURE</span><span className="project-number">04</span></div>
+              <h3>C4 Architecture — Dossier Processing Workstation</h3>
+              <p>Evidence-based architecture reconstruction with System Context, Container and Component views. Includes Structurizr DSL source and explicit verification boundaries for inferred relationships.</p>
+              <div className="project-tags"><span>C4 Model</span><span>Structurizr DSL</span><span>System Architecture</span></div>
+              <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/c4-architecture/" target="_blank" rel="noreferrer">Live case study <span>↗</span></a><a href="https://ekatmoz88-alt.github.io/c4-architecture/workspace.dsl" target="_blank" rel="noreferrer">Structurizr DSL ↗</a></div>
             </article>
             <article className="project-card">
               <div className="project-card-top"><span className="project-type">C++ / UI COMPONENTS</span><span className="project-number">02</span></div>
