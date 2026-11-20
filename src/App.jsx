@@ -290,6 +290,7 @@ export default function App() {
               <div className="project-links"><a className="project-link-primary" href="https://ekatmoz88-alt.github.io/technical-writing-workflows/" target="_blank" rel="noreferrer">Live documentation <span>↗</span></a><a href="https://github.com/ekatmoz88-alt/technical-writing-workflows" target="_blank" rel="noreferrer">Source ↗</a></div>
             </article>
           </div>
+        </section>
         <footer className="footer">
           <span>Data provided by the GitHub REST API</span>
           <span>Public data · Refresh to update</span>
